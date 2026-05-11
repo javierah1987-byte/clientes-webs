@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repuestos IPC Telde | Repuestos Furgonetas y Furgones Gran Canaria</title>
+  <meta name="description" content="Especialistas en repuestos de furgonetas y furgones en Las Palmas. +30 años de experiencia. Repuestos originales y sustitutivos. Entrega en 24h. Llama al 603 56 25 05.">
+  <link rel="canonical" href="https://repuestosipc.com/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Repuestos IPC | Especialistas en Furgonetas Gran Canaria">
+  <meta property="og:description" content="Repuestos originales y sustitutivos para furgonetas y furgones. +30 años en Las Palmas. Lubricantes Repsol, gasoil, herramientas.">
+  <meta property="og:image" content="https://repuestosipc.com/wp-content/uploads/2023/12/web2.jpg">
+  <meta property="og:url" content="https://repuestosipc.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Repuestos IPC | Furgonetas Gran Canaria">
+  <meta name="twitter:description" content="Especialistas en repuestos de furgonetas y furgones en Las Palmas. +30 años de experiencia.">
+  <meta name="twitter:image" content="https://repuestosipc.com/wp-content/uploads/2023/12/web2.jpg">
+  <!-- Schema LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoPartsStore",
+    "name": "Repuestos IPC",
+    "url": "https://repuestosipc.com",
+    "telephone": "+34603562505",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C. Monseñor Oscar Romero, 8",
+      "addressLocality": "Telde",
+      "postalCode": "35214",
+      "addressRegion": "Las Palmas",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 27.9896,
+      "longitude": -15.4159
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/ipcdistribucionesyrepuestos",
+      "https://www.instagram.com/repuestos_ipc/"
+    ],
+    "description": "Especialistas en repuestos de furgonetas y furgones en Las Palmas, Gran Canaria. Más de 30 años de experiencia.",
+    "priceRange": "€€",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "3"
+    }
+  }
+  </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ─── CSS VARIABLES ─── */
+    :root {
+      --red:       #C8002B;   /* rojo IPC del logo */
+      --red-dark:  #9E0022;
+      --red-light: #E8003A;
+      --navy:      #0D1B2A;   /* azul marino profundo — fondo hero y nav */
+      --navy-mid:  #1A2E42;
+      --white:     #FFFFFF;
+      --offwhite:  #F7F5F2;
+      --gray-100:  #F0EEEb;
+      --gray-300:  #BFBFBF;
+      --gray-600:  #6B6B6B;
+      --gray-800:  #2B2B2B;
+      --text:      #1A1A1A;
+      --font-head: 'Barlow Condensed', sans-serif;
+      --font-body: 'Barlow', sans-serif;
+      --radius:    8px;
+      --shadow:    0 4px 24px rgba(0,0,0,0.12);
+      --shadow-lg: 0 12px 48px rgba(0,0,0,0.18);
+    }
+
+    /* ─── RESET & BASE ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); color: var(--text); background: var(--white); line-height: 1.6; overflow-x: hidden; }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+    /* ─── SKIP LINK ─── */
+    .skip-link { position: absolute; left: -9999px; top: 8px; background: var(--red); color: #fff; padding: 8px 16px; border-radius: 4px; font-weight: 600; z-index: 9999; }
+    .skip-link:focus { left: 8px; }
+
+    /* ─── SCROLL PROGRESS ─── */
+    #scroll-progress { position: fixed; top: 0; left: 0; height: 3px; width: 0%; background: var(--red); z-index: 10000; transition: width 0.1s linear; }
+
+    /* ─── NAV ─── */
+    nav { position: sticky; top: 0; background: var(--navy); z-index: 1000; box-shadow: 0 2px 16px rgba(0,0,0,0.3); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 70px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; }
+    .nav-logo img { height: 52px; width: auto; }
+    .nav-logo-text { font-family: var(--font-head); font-size: 1.4rem; font-weight: 800; color: var(--white); letter-spacing: 0.05em; line-height: 1; }
+    .nav-logo-text span { color: var(--red); }
+    .nav-links { display: flex; align-items: center; gap: 28px; }
+    .nav-links a { font-size: 0.9rem; font-weight: 500; color: rgba(255,255,255,0.8); transition: color 0.2s; letter-spacing: 0.02em; text-transform: uppercase; }
+    .nav-links a:hover { color: var(--white); }
+    .nav-cta { background: var(--red); color: var(--white) !important; padding: 10px 22px; border-radius: var(--radius); font-weight: 600 !important; transition: background 0.2s, transform 0.15s !important; }
+    .nav-cta:hover { background: var(--red-dark) !important; transform: translateY(-1px); }
+    .nav-toggle { display: none; flex-direction: column; gap: 5px; padding: 8px; }
+    .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: transform 0.3s; }
+
+    /* ─── HERO ─── */
+    #hero { position: relative; background: var(--navy); min-height: 92vh; display: flex; align-items: center; overflow: hidden; }
+    .hero-bg { position: absolute; inset: 0; background-image: url('https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=1600&q=80'); background-size: cover; background-position: center; opacity: 0.18; }
+    .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(120deg, var(--navy) 50%, transparent 100%); }
+    .hero-inner { position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; padding: 80px 24px 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .hero-content { }
+    .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(200,0,43,0.15); border: 1px solid rgba(200,0,43,0.4); color: #ff6680; padding: 6px 16px; border-radius: 100px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 24px; }
+    .hero-badge svg { width: 14px; height: 14px; fill: currentColor; }
+    h1 { font-family: var(--font-head); font-size: clamp(2.6rem, 5vw, 4.2rem); font-weight: 800; color: var(--white); line-height: 1.05; letter-spacing: 0.01em; margin-bottom: 20px; }
+    h1 em { color: var(--red); font-style: normal; }
+    .hero-sub { font-size: 1.1rem; color: rgba(255,255,255,0.72); max-width: 480px; margin-bottom: 36px; line-height: 1.65; }
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 40px; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--red); color: var(--white); padding: 16px 32px; border-radius: var(--radius); font-family: var(--font-head); font-size: 1.1rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; transition: background 0.2s, transform 0.15s, box-shadow 0.2s; box-shadow: 0 4px 16px rgba(200,0,43,0.4); }
+    .btn-primary:hover { background: var(--red-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,0,43,0.5); }
+    .btn-wa { display: inline-flex; align-items: center; gap: 8px; background: #25D366; color: var(--white); padding: 16px 28px; border-radius: var(--radius); font-family: var(--font-head); font-size: 1.05rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; transition: background 0.2s, transform 0.15s; }
+    .btn-wa:hover { background: #1fbb59; transform: translateY(-2px); }
+    .hero-social { display: flex; align-items: center; gap: 16px; }
+    .stars { color: #FFB800; font-size: 1.2rem; letter-spacing: 2px; }
+    .hero-social-text { font-size: 0.88rem; color: rgba(255,255,255,0.6); }
+    .hero-social-text strong { color: var(--white); }
+    .hero-img-wrap { position: relative; }
+    .hero-img-wrap img { border-radius: 12px; width: 100%; height: 520px; object-fit: cover; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+    .hero-pill { position: absolute; bottom: -20px; left: -24px; background: var(--white); border-radius: 10px; padding: 16px 20px; box-shadow: var(--shadow-lg); display: flex; align-items: center; gap: 12px; min-width: 200px; }
+    .hero-pill-icon { width: 44px; height: 44px; background: rgba(200,0,43,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .hero-pill-icon svg { width: 22px; height: 22px; stroke: var(--red); fill: none; stroke-width: 2; }
+    .hero-pill-label { font-size: 0.75rem; color: var(--gray-600); font-weight: 500; }
+    .hero-pill-val { font-family: var(--font-head); font-size: 1.3rem; font-weight: 800; color: var(--navy); line-height: 1; }
+
+    /* ─── TRUST BAR ─── */
+    #trust { background: var(--red); padding: 20px 24px; }
+    .trust-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap; gap: 16px; }
+    .trust-item { display: flex; align-items: center; gap: 10px; color: var(--white); }
+    .trust-item svg { width: 22px; height: 22px; fill: none; stroke: rgba(255,255,255,0.9); stroke-width: 2; flex-shrink: 0; }
+    .trust-item span { font-size: 0.88rem; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; }
+
+    /* ─── SECTION HEADERS ─── */
+    .section-tag { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); margin-bottom: 10px; }
+    h2 { font-family: var(--font-head); font-size: clamp(1.9rem, 3.5vw, 2.8rem); font-weight: 800; color: var(--navy); line-height: 1.1; letter-spacing: 0.01em; }
+    h2 em { color: var(--red); font-style: normal; }
+    .section-lead { font-size: 1.05rem; color: var(--gray-600); max-width: 560px; margin-top: 12px; }
+
+    /* ─── PRODUCTS ─── */
+    #productos { padding: 100px 24px; background: var(--offwhite); }
+    .products-header { max-width: 1200px; margin: 0 auto 56px; }
+    .products-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .product-card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.07); transition: transform 0.25s, box-shadow 0.25s; }
+    .product-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .product-img { height: 220px; background: var(--gray-100); overflow: hidden; position: relative; }
+    .product-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+    .product-card:hover .product-img img { transform: scale(1.05); }
+    .product-tag { position: absolute; top: 14px; left: 14px; background: var(--red); color: var(--white); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 10px; border-radius: 4px; }
+    .product-body { padding: 22px; }
+    .product-body h3 { font-family: var(--font-head); font-size: 1.35rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+    .product-body p { font-size: 0.9rem; color: var(--gray-600); line-height: 1.55; margin-bottom: 16px; }
+    .product-link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem; font-weight: 700; color: var(--red); text-transform: uppercase; letter-spacing: 0.06em; transition: gap 0.2s; }
+    .product-link:hover { gap: 10px; }
+
+    /* ─── HOW WE WORK ─── */
+    #como { padding: 100px 24px; background: var(--white); }
+    .como-inner { max-width: 1200px; margin: 0 auto; }
+    .como-header { margin-bottom: 64px; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; position: relative; }
+    .steps::before { content: ''; position: absolute; top: 52px; left: 16%; right: 16%; height: 2px; background: repeating-linear-gradient(to right, var(--red) 0, var(--red) 12px, transparent 12px, transparent 24px); }
+    .step { text-align: center; position: relative; }
+    .step-num { width: 104px; height: 104px; border-radius: 50%; background: var(--navy); color: var(--white); display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-family: var(--font-head); font-size: 2.4rem; font-weight: 800; position: relative; z-index: 1; box-shadow: 0 6px 20px rgba(13,27,42,0.25); }
+    .step-num::after { content: ''; position: absolute; inset: -5px; border-radius: 50%; border: 2px solid var(--red); opacity: 0.5; }
+    .step h3 { font-family: var(--font-head); font-size: 1.3rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+    .step p { font-size: 0.9rem; color: var(--gray-600); max-width: 240px; margin: 0 auto; line-height: 1.6; }
+
+    /* ─── WHY ─── */
+    #porque { padding: 100px 24px; background: var(--navy); }
+    .porque-inner { max-width: 1200px; margin: 0 auto; }
+    .porque-header { margin-bottom: 64px; }
+    .porque-header h2 { color: var(--white); }
+    .porque-header .section-tag { color: rgba(255,255,255,0.5); }
+    .porque-header .section-lead { color: rgba(255,255,255,0.6); }
+    .reasons-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-bottom: 64px; }
+    .reason-card { background: var(--navy-mid); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 28px; transition: border-color 0.2s, transform 0.2s; }
+    .reason-card:hover { border-color: rgba(200,0,43,0.4); transform: translateY(-3px); }
+    .reason-icon { width: 48px; height: 48px; background: rgba(200,0,43,0.12); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+    .reason-icon svg { width: 24px; height: 24px; stroke: var(--red); fill: none; stroke-width: 2; }
+    .reason-card h3 { font-family: var(--font-head); font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    .reason-card p { font-size: 0.88rem; color: rgba(255,255,255,0.6); line-height: 1.6; }
+    .stats-row { display: flex; justify-content: center; gap: 60px; padding: 40px 0; border-top: 1px solid rgba(255,255,255,0.08); flex-wrap: wrap; }
+    .stat { text-align: center; }
+    .stat-num { font-family: var(--font-head); font-size: clamp(2.4rem, 4vw, 3.6rem); font-weight: 800; color: var(--red); line-height: 1; display: block; }
+    .stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-top: 6px; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500; }
+
+    /* ─── TESTIMONIOS ─── */
+    #testimonios { padding: 100px 24px; background: var(--offwhite); }
+    .test-inner { max-width: 1200px; margin: 0 auto; }
+    .test-header { margin-bottom: 56px; }
+    .test-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .test-card { background: var(--white); border-radius: 12px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); position: relative; transition: transform 0.2s, box-shadow 0.2s; }
+    .test-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .test-quote { position: absolute; top: 24px; right: 24px; font-size: 4rem; line-height: 1; color: var(--red); opacity: 0.12; font-family: Georgia, serif; }
+    .test-stars { color: #FFB800; margin-bottom: 14px; font-size: 1rem; letter-spacing: 2px; }
+    .test-text { font-size: 0.92rem; color: var(--gray-600); line-height: 1.7; margin-bottom: 20px; font-style: italic; }
+    .test-author { display: flex; align-items: center; gap: 12px; }
+    .test-avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--red); color: var(--white); font-family: var(--font-head); font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .test-name { font-weight: 700; color: var(--navy); font-size: 0.92rem; }
+    .test-role { font-size: 0.8rem; color: var(--gray-600); }
+
+    /* ─── GALERÍA ─── */
+    #galeria { padding: 100px 24px; background: var(--white); }
+    .galeria-inner { max-width: 1200px; margin: 0 auto; }
+    .galeria-header { margin-bottom: 48px; }
+    .galeria-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: 200px 200px; gap: 12px; }
+    .galeria-item { border-radius: 8px; overflow: hidden; position: relative; background: var(--gray-100); }
+    .galeria-item.big { grid-column: span 2; grid-row: span 2; }
+    .galeria-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+    .galeria-item:hover img { transform: scale(1.06); }
+    .galeria-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,27,42,0.6) 0%, transparent 60%); opacity: 0; transition: opacity 0.3s; display: flex; align-items: flex-end; padding: 16px; }
+    .galeria-item:hover .galeria-overlay { opacity: 1; }
+    .galeria-overlay span { color: var(--white); font-size: 0.82rem; font-weight: 600; }
+
+    /* ─── CLIENTES ─── */
+    #clientes { padding: 80px 24px; background: var(--offwhite); }
+    .clientes-inner { max-width: 1200px; margin: 0 auto; }
+    .clientes-header { margin-bottom: 52px; }
+    .clientes-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .cliente-card { background: var(--white); border-radius: 12px; padding: 28px 20px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: transform 0.2s; }
+    .cliente-card:hover { transform: translateY(-3px); }
+    .cliente-icon { width: 56px; height: 56px; margin: 0 auto 16px; background: rgba(200,0,43,0.08); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+    .cliente-icon svg { width: 28px; height: 28px; stroke: var(--red); fill: none; stroke-width: 1.8; }
+    .cliente-card h3 { font-family: var(--font-head); font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .cliente-card p { font-size: 0.82rem; color: var(--gray-600); line-height: 1.5; }
+
+    /* ─── FAQ ─── */
+    #faq { padding: 100px 24px; background: var(--white); }
+    .faq-inner { max-width: 800px; margin: 0 auto; }
+    .faq-header { margin-bottom: 48px; }
+    .faq-list { display: flex; flex-direction: column; gap: 12px; }
+    .faq-item { border: 1px solid #E4E0DB; border-radius: 10px; overflow: hidden; }
+    .faq-question { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 20px 24px; font-family: var(--font-body); font-size: 1rem; font-weight: 600; color: var(--navy); text-align: left; gap: 16px; transition: background 0.2s; }
+    .faq-question:hover { background: var(--offwhite); }
+    .faq-icon { width: 28px; height: 28px; border-radius: 50%; border: 2px solid var(--red); color: var(--red); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 700; flex-shrink: 0; transition: transform 0.3s, background 0.2s; }
+    .faq-item.open .faq-icon { background: var(--red); color: var(--white); transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s; }
+    .faq-answer-inner { padding: 0 24px 22px; font-size: 0.95rem; color: var(--gray-600); line-height: 1.75; }
+
+    /* ─── MARCAS ─── */
+    #marcas { padding: 60px 24px; background: var(--offwhite); border-top: 1px solid #E4E0DB; }
+    .marcas-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
+    .marcas-inner p { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-600); margin-bottom: 32px; }
+    .marcas-row { display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; }
+    .marca-logo { display: flex; align-items: center; justify-content: center; padding: 12px 20px; background: var(--white); border-radius: 8px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); min-width: 120px; }
+    .marca-logo span { font-family: var(--font-head); font-size: 1.1rem; font-weight: 800; color: var(--gray-600); letter-spacing: 0.04em; }
+
+    /* ─── CTA FINAL + FORMULARIO ─── */
+    #contacto { padding: 100px 24px; background: var(--navy); position: relative; overflow: hidden; }
+    #contacto::before { content: ''; position: absolute; right: -100px; top: -100px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(200,0,43,0.12) 0%, transparent 70%); pointer-events: none; }
+    .contacto-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; position: relative; z-index: 1; }
+    .contacto-content h2 { color: var(--white); }
+    .contacto-content .section-tag { color: rgba(255,255,255,0.5); }
+    .contacto-lead { font-size: 1rem; color: rgba(255,255,255,0.65); margin: 16px 0 32px; line-height: 1.7; }
+    .contact-info-item { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+    .contact-icon { width: 44px; height: 44px; border-radius: 10px; background: rgba(200,0,43,0.15); border: 1px solid rgba(200,0,43,0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .contact-icon svg { width: 20px; height: 20px; stroke: var(--red); fill: none; stroke-width: 2; }
+    .contact-info-label { font-size: 0.78rem; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; margin-bottom: 2px; }
+    .contact-info-val { font-size: 1rem; color: var(--white); font-weight: 600; }
+    .contacto-form { background: var(--white); border-radius: 16px; padding: 40px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+    .contacto-form h3 { font-family: var(--font-head); font-size: 1.5rem; font-weight: 800; color: var(--navy); margin-bottom: 24px; }
+    .form-group { margin-bottom: 18px; }
+    label { display: block; font-size: 0.82rem; font-weight: 600; color: var(--gray-800); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.06em; }
+    input, select, textarea { width: 100%; padding: 13px 16px; border: 1.5px solid #DDD9D4; border-radius: var(--radius); font-family: var(--font-body); font-size: 0.95rem; color: var(--text); background: var(--white); transition: border-color 0.2s, box-shadow 0.2s; outline: none; }
+    input:focus, select:focus, textarea:focus { border-color: var(--red); box-shadow: 0 0 0 3px rgba(200,0,43,0.12); }
+    textarea { resize: vertical; min-height: 110px; }
+    .form-submit { width: 100%; background: var(--red); color: var(--white); padding: 16px; border-radius: var(--radius); font-family: var(--font-head); font-size: 1.1rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; transition: background 0.2s, transform 0.15s; margin-top: 4px; }
+    .form-submit:hover { background: var(--red-dark); transform: translateY(-1px); }
+    .form-note { font-size: 0.78rem; color: var(--gray-600); text-align: center; margin-top: 12px; }
+
+    /* ─── FOOTER ─── */
+    footer { background: #060F18; color: rgba(255,255,255,0.6); padding: 60px 24px 32px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand p { font-size: 0.88rem; line-height: 1.7; margin: 16px 0 20px; max-width: 280px; }
+    .footer-social { display: flex; gap: 12px; }
+    .footer-social a { width: 36px; height: 36px; border-radius: 8px; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+    .footer-social a:hover { background: var(--red); }
+    .footer-social svg { width: 16px; height: 16px; fill: rgba(255,255,255,0.7); }
+    .footer-col h4 { font-family: var(--font-head); font-size: 0.95rem; font-weight: 700; color: var(--white); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul a { font-size: 0.85rem; color: rgba(255,255,255,0.5); transition: color 0.2s; }
+    .footer-col ul a:hover { color: var(--white); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: gap; gap: 12px; font-size: 0.8rem; }
+    .footer-bottom a { color: rgba(255,255,255,0.4); transition: color 0.2s; }
+    .footer-bottom a:hover { color: var(--white); }
+
+    /* ─── WHATSAPP FLOAT ─── */
+    #wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 999; display: flex; align-items: center; gap: 12px; background: #25D366; color: var(--white); padding: 14px 20px; border-radius: 100px; box-shadow: 0 6px 24px rgba(37,211,102,0.45); font-family: var(--font-head); font-size: 1rem; font-weight: 700; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; animation: wa-pulse 3s infinite; }
+    #wa-float:hover { transform: scale(1.05); box-shadow: 0 10px 32px rgba(37,211,102,0.55); }
+    #wa-float svg { width: 22px; height: 22px; fill: var(--white); flex-shrink: 0; }
+    @keyframes wa-pulse { 0%,100%{box-shadow:0 6px 24px rgba(37,211,102,0.45)} 50%{box-shadow:0 6px 36px rgba(37,211,102,0.7)} }
+
+    /* ─── SCROLL REVEAL ─── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+      .hero-img-wrap { display: none; }
+      .hero-bg { opacity: 0.25; }
+      .products-grid { grid-template-columns: repeat(2, 1fr); }
+      .reasons-grid { grid-template-columns: repeat(2, 1fr); }
+      .test-grid { grid-template-columns: 1fr; max-width: 500px; }
+      .galeria-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: auto; }
+      .galeria-item.big { grid-column: span 2; height: 280px; }
+      .clientes-grid { grid-template-columns: repeat(2, 1fr); }
+      .contacto-inner { grid-template-columns: 1fr; gap: 48px; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .nav-links { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; right: 0; background: var(--navy); padding: 20px 24px; gap: 14px; }
+      .nav-links.open { display: flex; }
+      .nav-toggle { display: flex; }
+      h1 { font-size: 2.4rem; }
+      .hero-ctas { flex-direction: column; }
+      .btn-primary, .btn-wa { width: 100%; justify-content: center; }
+      .trust-inner { flex-direction: column; gap: 10px; }
+      .products-grid { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr; gap: 40px; }
+      .steps::before { display: none; }
+      .reasons-grid { grid-template-columns: 1fr; }
+      .stats-row { gap: 32px; }
+      .test-grid { max-width: 100%; }
+      .galeria-grid { grid-template-columns: 1fr; }
+      .galeria-item.big { height: 220px; }
+      .clientes-grid { grid-template-columns: 1fr 1fr; }
+      .footer-top { grid-template-columns: 1fr; }
+      #wa-float span { display: none; }
+      #wa-float { padding: 16px; border-radius: 50%; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="scroll-progress" role="progressbar" aria-label="Progreso de lectura"></div>
+<a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+<!-- ─── NAV ─── -->
+<nav aria-label="Navegación principal">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" aria-label="Repuestos IPC — inicio">
+      <img src="https://repuestosipc.com/wp-content/uploads/2023/03/LOGO_-17Pequeno-150x90.png"
+           alt="Logo Repuestos IPC" width="100" height="60"
+           onerror="this.style.display='none'">
+      <div class="nav-logo-text">REPUESTOS <span>IPC</span></div>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#como">Cómo trabajamos</a></li>
+      <li><a href="#testimonios">Opiniones</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contacto" class="nav-cta" aria-label="Contactar con Repuestos IPC">Pedir presupuesto</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links" id="nav-toggle">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<!-- ─── HERO ─── -->
+<section id="hero" aria-label="Sección principal">
+  <div class="hero-bg" role="presentation"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge" aria-label="Especialistas en furgonetas Gran Canaria">
+        <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        Especialistas en Gran Canaria
+      </div>
+      <h1>Repuestos para<br><em>furgonetas y furgones</em><br>en Las Palmas</h1>
+      <p class="hero-sub">Originales y sustitutivos de primera marca. Más de 30 años manteniendo las flotas de Gran Canaria con calidad, precio y entrega inmediata.</p>
+      <div class="hero-ctas">
+        <a href="tel:+34603562505" class="btn-primary" aria-label="Llamar a Repuestos IPC">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          Llama ahora: 603 56 25 05
+        </a>
+        <a href="https://wa.me/34603562505?text=Hola%2C%20me%20gustaría%20pedir%20información%20sobre%20repuestos" class="btn-wa" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 0C5.37 0 .003 5.367.003 12.002c0 2.117.558 4.21 1.619 6.047L0 24l6.116-1.592c1.786.973 3.808 1.49 5.888 1.49h.005C18.64 23.898 24 18.53 24 11.898 24 5.37 18.64.003 12.004.003z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <div class="hero-social">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <p class="hero-social-text"><strong>+30 años</strong> de confianza en Gran Canaria</p>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+           alt="Mecánico profesional trabajando en repuestos de furgoneta en Las Palmas"
+           width="600" height="520"
+           style="background-color: var(--navy-mid);">
+      <div class="hero-pill" aria-label="Más de 30 años de experiencia">
+        <div class="hero-pill-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
+        </div>
+        <div>
+          <div class="hero-pill-label">Experiencia</div>
+          <div class="hero-pill-val">+30 años</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TRUST BAR ─── -->
+<div id="trust" role="complementary" aria-label="Garantías">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <span>Entrega inmediata</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+      <span>Repuestos originales garantizados</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg>
+      <span>Asesoramiento personalizado</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+      <span>Reparto con flota propia</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/></svg>
+      <span>Plataforma B2B para profesionales</span>
+    </div>
+  </div>
+</div>
+
+<!-- ─── PRODUCTOS ─── -->
+<section id="productos" aria-labelledby="productos-h2">
+  <div class="products-header reveal">
+    <span class="section-tag">Nuestros productos</span>
+    <h2 id="productos-h2">Todo lo que necesita<br>tu flota en <em>un solo proveedor</em></h2>
+    <p class="section-lead">Repuestos, lubricantes, gasoil, herramientas y consumibles. Originales y sustitutivos de las mejores marcas para mantener tu furgoneta siempre a punto.</p>
+  </div>
+  <div class="products-grid">
+
+    <article class="product-card reveal reveal-delay-1">
+      <div class="product-img" style="background-color:#1A2E42;">
+        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&q=80"
+             alt="Repuestos originales y sustitutivos para furgonetas y furgones Las Palmas"
+             width="600" height="220" loading="lazy" style="background-color:#1A2E42;">
+        <span class="product-tag">Más vendido</span>
+      </div>
+      <div class="product-body">
+        <h3>Repuestos de Furgonetas</h3>
+        <p>Piezas originales y sustitutivas de primera calidad para todas las marcas de furgonetas y furgones. Frenos, motor, suspensión, carrocería y más.</p>
+        <a href="#contacto" class="product-link" aria-label="Pedir presupuesto de repuestos">
+          Solicitar pieza
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <article class="product-card reveal reveal-delay-2">
+      <div class="product-img" style="background-color:#0D1B2A;">
+        <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80"
+             alt="Lubricantes Repsol para coches furgonetas camiones Gran Canaria"
+             width="600" height="220" loading="lazy" style="background-color:#0D1B2A;">
+      </div>
+      <div class="product-body">
+        <h3>Lubricantes Repsol</h3>
+        <p>Distribuidores oficiales de toda la gama Repsol: aceites motor, grasas, hidráulicos, valvulinas, refrigerantes y más para todas las aplicaciones.</p>
+        <a href="#contacto" class="product-link" aria-label="Consultar gama de lubricantes">
+          Ver gama completa
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <article class="product-card reveal reveal-delay-3">
+      <div class="product-img" style="background-color:#1A2E42;">
+        <img src="https://images.unsplash.com/photo-1545262810-a9b4cd5f9ad0?w=600&q=80"
+             alt="Suministro de gasoil para flotas embarcaciones obras Las Palmas"
+             width="600" height="220" loading="lazy" style="background-color:#1A2E42;">
+      </div>
+      <div class="product-body">
+        <h3>Distribución de Gasoil</h3>
+        <p>Suministro de gasoil para flotas de vehículos, obras, embarcaciones, calderas y viviendas particulares. Camiones cisterna propios para reparto ágil.</p>
+        <a href="#contacto" class="product-link" aria-label="Contratar suministro de gasoil">
+          Contratar suministro
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <article class="product-card reveal reveal-delay-1">
+      <div class="product-img" style="background-color:#0D1B2A;">
+        <img src="https://images.unsplash.com/photo-1504222490345-c075b7c0ed7d?w=600&q=80"
+             alt="Herramientas profesionales alemanas para talleres Las Palmas Gran Canaria"
+             width="600" height="220" loading="lazy" style="background-color:#0D1B2A;">
+      </div>
+      <div class="product-body">
+        <h3>Herramientas Profesionales</h3>
+        <p>Herramientas de tecnología y calidad alemana para talleres y profesionales. Durabilidad y precisión para el mantenimiento de flotas industriales.</p>
+        <a href="#contacto" class="product-link" aria-label="Consultar catálogo de herramientas">
+          Ver catálogo
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <article class="product-card reveal reveal-delay-2">
+      <div class="product-img" style="background-color:#1A2E42;">
+        <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=600&q=80"
+             alt="Depósitos GRG homologados para gasoil en furgonetas Las Palmas"
+             width="600" height="220" loading="lazy" style="background-color:#1A2E42;">
+      </div>
+      <div class="product-body">
+        <h3>Depósitos GRG</h3>
+        <p>Depósitos homologados y legalizados para transportar gasoil en furgoneta o Pick Up. Solución segura y legal para llevar combustible en tu vehículo.</p>
+        <a href="#contacto" class="product-link" aria-label="Consultar depósitos GRG">
+          Más información
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <article class="product-card reveal reveal-delay-3">
+      <div class="product-img" style="background-color:#0D1B2A;">
+        <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=600&q=80"
+             alt="Consumibles profesionales guantes bobinas limpiabrisas Gran Canaria"
+             width="600" height="220" loading="lazy" style="background-color:#0D1B2A;">
+      </div>
+      <div class="product-body">
+        <h3>Consumibles de Taller</h3>
+        <p>Guantes, bobinas de papel, limpia frenos, líquido refrigerante, pegamentos, formadores de juntas y cientos de artículos para el día a día del taller.</p>
+        <a href="#contacto" class="product-link" aria-label="Consultar consumibles de taller">
+          Ver productos
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ─── CÓMO TRABAJAMOS ─── -->
+<section id="como" aria-labelledby="como-h2">
+  <div class="como-inner">
+    <div class="como-header reveal">
+      <span class="section-tag">Proceso sin complicaciones</span>
+      <h2 id="como-h2">Pide tu repuesto y<br><em>te lo llevamos</em></h2>
+      <p class="section-lead">Tres pasos sencillos para que tu furgoneta vuelva a rodar cuanto antes.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal reveal-delay-1">
+        <div class="step-num">01</div>
+        <h3>Contáctanos</h3>
+        <p>Llámanos, escríbenos por WhatsApp o rellena el formulario. Cuéntanos la marca, modelo y la pieza que necesitas.</p>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="step-num">02</div>
+        <h3>Recibe tu presupuesto</h3>
+        <p>En menos de 2 horas te confirmamos disponibilidad, precio y plazo de entrega. Sin sorpresas ni letra pequeña.</p>
+      </div>
+      <div class="step reveal reveal-delay-3">
+        <div class="step-num">03</div>
+        <h3>Entrega o recogida</h3>
+        <p>Te lo llevamos con nuestra flota propia o lo recogemos en nuestras instalaciones en Telde. Rápido y seguro.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── POR QUÉ ELEGIRNOS ─── -->
+<section id="porque" aria-labelledby="porque-h2">
+  <div class="porque-inner">
+    <div class="porque-header reveal">
+      <span class="section-tag">Por qué IPC</span>
+      <h2 id="porque-h2">El proveedor que<br><em>cuida tu flota</em></h2>
+      <p class="section-lead">En Gran Canaria, la mayoría de distribuidores solo tienen parte del catálogo. Nosotros somos tu proveedor integral.</p>
+    </div>
+    <div class="reasons-grid">
+      <div class="reason-card reveal reveal-delay-1">
+        <div class="reason-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/></svg>
+        </div>
+        <h3>Especialistas en furgones</h3>
+        <p>No somos un almacén generalista. Desde 2019 nos especializamos exclusivamente en repuestos para furgonetas y furgones de todas las marcas.</p>
+      </div>
+      <div class="reason-card reveal reveal-delay-2">
+        <div class="reason-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+        </div>
+        <h3>Flota propia de reparto</h3>
+        <p>Controlamos el transporte de principio a fin. Sin intermediarios ni esperas. Tu pedido llega cuando lo prometemos.</p>
+      </div>
+      <div class="reason-card reveal reveal-delay-3">
+        <div class="reason-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+        </div>
+        <h3>Marcas de primera garantía</h3>
+        <p>Trabajamos con FAST y otras marcas premium, combinando la fiabilidad del repuesto original con precios más competitivos.</p>
+      </div>
+      <div class="reason-card reveal reveal-delay-4">
+        <div class="reason-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg>
+        </div>
+        <h3>Equipo humano excepcional</h3>
+        <p>Nuestros clientes repiten porque el trato de Gregorio y el equipo es siempre cercano, rápido y resuelve hasta los problemas más difíciles.</p>
+      </div>
+    </div>
+    <div class="stats-row" role="region" aria-label="Estadísticas de la empresa">
+      <div class="stat">
+        <span class="stat-num counter" data-target="30" aria-label="Más de 30 años de experiencia">0</span>
+        <div class="stat-label">Años de experiencia</div>
+      </div>
+      <div class="stat">
+        <span class="stat-num counter" data-target="500" aria-label="Más de 500 clientes activos">0</span>
+        <div class="stat-label">Clientes activos</div>
+      </div>
+      <div class="stat">
+        <span class="stat-num counter" data-target="5000" aria-label="Más de 5000 referencias en stock">0</span>
+        <div class="stat-label">Referencias en stock</div>
+      </div>
+      <div class="stat">
+        <span class="stat-num" aria-label="Valoración 5 estrellas">5★</span>
+        <div class="stat-label">Valoración Google</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TESTIMONIOS ─── -->
+<section id="testimonios" aria-labelledby="test-h2">
+  <div class="test-inner">
+    <div class="test-header reveal">
+      <span class="section-tag">Opiniones reales</span>
+      <h2 id="test-h2">Lo que dicen<br><em>nuestros clientes</em></h2>
+    </div>
+    <div class="test-grid">
+      <article class="test-card reveal reveal-delay-1">
+        <div class="test-quote" aria-hidden="true">"</div>
+        <div class="test-stars" aria-label="5 estrellas">★★★★★</div>
+        <p class="test-text">Muy serios y rápidos a la hora de servir lo que sea, porque tienen de todo y si no te lo consiguen rápidamente. El trato recibido siempre de 10, sobretodo por parte del señor Gregorio.</p>
+        <div class="test-author">
+          <div class="test-avatar" aria-hidden="true">T</div>
+          <div>
+            <div class="test-name">Tato Benítez</div>
+            <div class="test-role">Cliente — Gestor de flota</div>
+          </div>
+        </div>
+      </article>
+      <article class="test-card reveal reveal-delay-2">
+        <div class="test-quote" aria-hidden="true">"</div>
+        <div class="test-stars" aria-label="5 estrellas">★★★★★</div>
+        <p class="test-text">Grandes profesionales en el sector, con un equipo humano que más de una empresa del sector quisiera, y un índice muy alto a la hora de solucionar problemas complicados.</p>
+        <div class="test-author">
+          <div class="test-avatar" aria-hidden="true">J</div>
+          <div>
+            <div class="test-name">Julio B. A.</div>
+            <div class="test-role">Cliente — Empresa de transporte</div>
+          </div>
+        </div>
+      </article>
+      <article class="test-card reveal reveal-delay-3">
+        <div class="test-quote" aria-hidden="true">"</div>
+        <div class="test-stars" aria-label="5 estrellas">★★★★★</div>
+        <p class="test-text">Excelente atención desde el primer momento. Encontré la pieza que llevaba semanas buscando en otros distribuidores. Precio justo y entrega al día siguiente. 100% recomendable.</p>
+        <div class="test-author">
+          <div class="test-avatar" aria-hidden="true">J</div>
+          <div>
+            <div class="test-name">Juan Carlos Torrealba</div>
+            <div class="test-role">Cliente — Autónomo</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ─── GALERÍA ─── -->
+<section id="galeria" aria-labelledby="galeria-h2">
+  <div class="galeria-inner">
+    <div class="galeria-header reveal">
+      <span class="section-tag">En acción</span>
+      <h2 id="galeria-h2">Repuestos reales para<br><em>flotas reales</em></h2>
+    </div>
+    <div class="galeria-grid">
+      <div class="galeria-item big">
+        <img src="https://images.unsplash.com/photo-1616706375893-e7f9da1a8eb6?w=800&q=80"
+             alt="Almacén de repuestos de furgonetas Gran Canaria Repuestos IPC"
+             width="800" height="400" loading="lazy" style="background-color:#1A2E42;">
+        <div class="galeria-overlay"><span>Almacén de repuestos</span></div>
+      </div>
+      <div class="galeria-item">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&q=80"
+             alt="Furgoneta de reparto flota Gran Canaria mantenimiento"
+             width="400" height="200" loading="lazy" style="background-color:#0D1B2A;">
+        <div class="galeria-overlay"><span>Flota de reparto propia</span></div>
+      </div>
+      <div class="galeria-item">
+        <img src="https://images.unsplash.com/photo-1606577924006-27d39b132ae2?w=400&q=80"
+             alt="Lubricantes Repsol distribución Gran Canaria"
+             width="400" height="200" loading="lazy" style="background-color:#1A2E42;">
+        <div class="galeria-overlay"><span>Lubricantes Repsol</span></div>
+      </div>
+      <div class="galeria-item">
+        <img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=400&q=80"
+             alt="Herramientas profesionales taller mecánico Las Palmas"
+             width="400" height="200" loading="lazy" style="background-color:#0D1B2A;">
+        <div class="galeria-overlay"><span>Herramientas profesionales</span></div>
+      </div>
+      <div class="galeria-item">
+        <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?w=400&q=80"
+             alt="Mecánico profesional revisando motor furgoneta"
+             width="400" height="200" loading="lazy" style="background-color:#1A2E42;">
+        <div class="galeria-overlay"><span>Asesoramiento técnico</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SECTORES / CLIENTES ─── -->
+<section id="clientes" aria-labelledby="clientes-h2">
+  <div class="clientes-inner">
+    <div class="clientes-header reveal">
+      <span class="section-tag">¿A quién servimos?</span>
+      <h2 id="clientes-h2">Soluciones para<br>cada <em>tipo de cliente</em></h2>
+    </div>
+    <div class="clientes-grid">
+      <div class="cliente-card reveal reveal-delay-1">
+        <div class="cliente-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+        </div>
+        <h3>Flotas de Empresa</h3>
+        <p>Empresas con vehículos de reparto que necesitan rapidez y precio competitivo.</p>
+      </div>
+      <div class="cliente-card reveal reveal-delay-2">
+        <div class="cliente-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/></svg>
+        </div>
+        <h3>Talleres Mecánicos</h3>
+        <p>Profesionales que necesitan stock fiable y gestor B2B con precios mayoristas.</p>
+      </div>
+      <div class="cliente-card reveal reveal-delay-3">
+        <div class="cliente-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"/></svg>
+        </div>
+        <h3>Construcción y Obras</h3>
+        <p>Empresas de construcción con maquinaria y vehículos que requieren suministro de combustible y repuestos.</p>
+      </div>
+      <div class="cliente-card reveal reveal-delay-4">
+        <div class="cliente-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+        </div>
+        <h3>Autónomos y Pymes</h3>
+        <p>Propietarios de una o varias furgonetas que buscan un proveedor de confianza cerca de ellos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FAQ ─── -->
+<section id="faq" aria-labelledby="faq-h2">
+  <div class="faq-inner">
+    <div class="faq-header reveal">
+      <span class="section-tag">Preguntas frecuentes</span>
+      <h2 id="faq-h2">Resolvemos tus<br><em>dudas antes de llamar</em></h2>
+    </div>
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-1" id="faq-btn-1">
+          ¿Dónde puedo comprar repuestos para furgonetas en Gran Canaria con entrega rápida?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-1" role="region" aria-labelledby="faq-btn-1">
+          <div class="faq-answer-inner">
+            En Repuestos IPC, ubicados en C. Monseñor Oscar Romero 8, Telde (Las Palmas), disponemos de un amplio stock de repuestos para furgonetas y furgones de todas las marcas. Contamos con flota propia para entrega inmediata en Gran Canaria y plataforma B2B para profesionales con pedidos frecuentes.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-2" id="faq-btn-2">
+          ¿Trabajáis con repuestos originales o solo sustitutivos?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-2" role="region" aria-labelledby="faq-btn-2">
+          <div class="faq-answer-inner">
+            Trabajamos con ambos: repuestos originales de fabricante y repuestos sustitutivos de primera calidad, como la marca FAST. Los sustitutivos ofrecen la misma garantía de funcionamiento a un precio más competitivo, ideal para mantener tu flota al día sin disparar los costes de mantenimiento.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-3" id="faq-btn-3">
+          ¿Tienen servicio de reparto de gasoil para empresas en Las Palmas?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-3" role="region" aria-labelledby="faq-btn-3">
+          <div class="faq-answer-inner">
+            Sí. Somos distribuidores de gasoil para flotas de vehículos, empresas de construcción, embarcaciones, calderas y particulares. Contamos con camiones cisterna propios para garantizar el suministro puntual. Contáctanos para establecer un contrato de suministro adaptado al volumen de tu empresa.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-4" id="faq-btn-4">
+          ¿Disponéis de portal B2B para talleres y empresas con pedidos frecuentes?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-4" role="region" aria-labelledby="faq-btn-4">
+          <div class="faq-answer-inner">
+            Sí, disponemos de una plataforma exclusiva para profesionales en b2b.repuestosipc.com donde puedes consultar el catálogo completo, hacer pedidos, controlar tu historial y acceder a precios especiales para empresas. Contacta con nosotros para activar tu acceso de profesional.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-5" id="faq-btn-5">
+          ¿Qué pasa si necesito un repuesto para furgoneta que no está en stock?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-5" role="region" aria-labelledby="faq-btn-5">
+          <div class="faq-answer-inner">
+            Si no disponemos de la pieza en nuestro almacén, la localizamos rápidamente gracias a nuestra red de proveedores. En la mayoría de los casos conseguimos el repuesto de furgoneta en 24-48h. Como decía uno de nuestros clientes: "tienen de todo, y si no te lo consiguen rápidamente".
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── MARCAS ─── -->
+<section id="marcas" aria-label="Marcas con las que trabajamos">
+  <div class="marcas-inner">
+    <p>Marcas de confianza con las que trabajamos</p>
+    <div class="marcas-row">
+      <div class="marca-logo"><span>REPSOL</span></div>
+      <div class="marca-logo"><span>FAST</span></div>
+      <div class="marca-logo"><span>BOSCH</span></div>
+      <div class="marca-logo"><span>MAHLE</span></div>
+      <div class="marca-logo"><span>MANN</span></div>
+      <div class="marca-logo"><span>NGK</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACTO ─── -->
+<section id="contacto" aria-labelledby="contacto-h2">
+  <div class="contacto-inner">
+    <div class="contacto-content reveal">
+      <span class="section-tag">Contacta con nosotros</span>
+      <h2 id="contacto-h2">Pide tu presupuesto<br><em>sin compromiso</em></h2>
+      <p class="contacto-lead">Cuéntanos qué necesitas y te respondemos en menos de 2 horas. Sin esperas, sin burocracia, solo soluciones.</p>
+
+      <div class="contact-info-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+        </div>
+        <div>
+          <div class="contact-info-label">Teléfono</div>
+          <a href="tel:+34603562505" class="contact-info-val" aria-label="Llamar a Repuestos IPC">603 56 25 05</a>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="currentColor" stroke="none"/><path d="M12.004 0C5.37 0 .003 5.367.003 12.002c0 2.117.558 4.21 1.619 6.047L0 24l6.116-1.592c1.786.973 3.808 1.49 5.888 1.49h.005C18.64 23.898 24 18.53 24 11.898 24 5.37 18.64.003 12.004.003z" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <div>
+          <div class="contact-info-label">WhatsApp</div>
+          <a href="https://wa.me/34603562505" class="contact-info-val" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">+34 603 56 25 05</a>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+        </div>
+        <div>
+          <div class="contact-info-label">Dirección</div>
+          <div class="contact-info-val">C. Monseñor Oscar Romero, 8<br>35214 Telde, Las Palmas</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contacto-form reveal reveal-delay-2">
+      <h3>Solicita información</h3>
+      <div class="form-group">
+        <label for="nombre">Nombre *</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" autocomplete="name" aria-required="true">
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono *</label>
+        <input type="tel" id="telefono" name="telefono" required placeholder="Ej: 600 000 000" autocomplete="tel" aria-required="true">
+      </div>
+      <div class="form-group">
+        <label for="tipo">Tipo de cliente</label>
+        <select id="tipo" name="tipo" aria-label="Selecciona el tipo de cliente">
+          <option value="">Selecciona...</option>
+          <option value="flota">Empresa con flota</option>
+          <option value="taller">Taller mecánico</option>
+          <option value="autonomo">Autónomo / Particular</option>
+          <option value="obra">Construcción / Obras</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">¿Qué necesitas?</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Describe la pieza, el modelo de vehículo o el servicio que necesitas..." aria-label="Descripción de tu consulta"></textarea>
+      </div>
+      <button type="submit" class="form-submit" aria-label="Enviar solicitud de presupuesto">
+        Enviar solicitud →
+      </button>
+      <p class="form-note">🔒 Sin spam. Te respondemos en menos de 2 horas en horario laboral.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div style="font-family: var(--font-head); font-size:1.4rem; font-weight:800; color:var(--white); letter-spacing:0.05em;">REPUESTOS <span style="color:var(--red)">IPC</span></div>
+        <p>Especialistas en repuestos de furgonetas y furgones en Las Palmas de Gran Canaria. Fundados en 1995, con más de 30 años al servicio de las flotas canarias.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/ipcdistribucionesyrepuestos" target="_blank" rel="noopener" aria-label="Facebook de Repuestos IPC">
+            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/repuestos_ipc/" target="_blank" rel="noopener" aria-label="Instagram de Repuestos IPC">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Productos</h4>
+        <ul>
+          <li><a href="#productos">Repuestos de Furgonetas</a></li>
+          <li><a href="#productos">Lubricantes Repsol</a></li>
+          <li><a href="#productos">Distribución de Gasoil</a></li>
+          <li><a href="#productos">Depósitos GRG</a></li>
+          <li><a href="#productos">Herramientas</a></li>
+          <li><a href="#productos">Consumibles</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="https://repuestosipc.com/sobre-nosotros/">Sobre nosotros</a></li>
+          <li><a href="#como">Cómo trabajamos</a></li>
+          <li><a href="#testimonios">Opiniones</a></li>
+          <li><a href="https://b2b.repuestosipc.com/" target="_blank" rel="noopener">Acceso profesionales</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+34603562505">603 56 25 05</a></li>
+          <li><a href="https://wa.me/34603562505" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://repuestosipc.com/contacto/">Formulario web</a></li>
+          <li style="color:rgba(255,255,255,0.35); font-size:0.82rem; margin-top:8px;">C. Monseñor Oscar Romero 8<br>35214 Telde, Las Palmas</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Repuestos IPC — Insular de Petroquímica y Combustibles S.A.</span>
+      <div style="display:flex;gap:20px;">
+        <a href="https://repuestosipc.com/aviso-legal/">Aviso legal</a>
+        <a href="https://repuestosipc.com/politica-de-privacidad/">Privacidad</a>
+        <a href="https://repuestosipc.com/politica-de-cookies/">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ─── WHATSAPP FLOAT ─── -->
+<a id="wa-float" href="https://wa.me/34603562505?text=Hola%2C%20me%20gustaría%20pedir%20información%20sobre%20repuestos" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp al 603 56 25 05">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 0C5.37 0 .003 5.367.003 12.002c0 2.117.558 4.21 1.619 6.047L0 24l6.116-1.592c1.786.973 3.808 1.49 5.888 1.49h.005C18.64 23.898 24 18.53 24 11.898 24 5.37 18.64.003 12.004.003z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script>
+// ─── SCROLL PROGRESS ───
+const prog = document.getElementById('scroll-progress');
+window.addEventListener('scroll', () => {
+  const h = document.documentElement.scrollHeight - window.innerHeight;
+  prog.style.width = (window.scrollY / h * 100) + '%';
+}, { passive: true });
+
+// ─── NAV TOGGLE ───
+const toggle = document.getElementById('nav-toggle');
+const navLinks = document.getElementById('nav-links');
+toggle.addEventListener('click', () => {
+  const open = navLinks.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', open);
+});
+
+// ─── SCROLL REVEAL ───
+const reveals = document.querySelectorAll('.reveal');
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+}, { threshold: 0.12 });
+reveals.forEach(r => revealObs.observe(r));
+
+// ─── ANIMATED COUNTERS ───
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target);
+  const duration = 1800;
+  const step = target / (duration / 16);
+  let current = 0;
+  const timer = setInterval(() => {
+    current = Math.min(current + step, target);
+    el.textContent = Math.floor(current).toLocaleString('es') + (target >= 1000 ? '+' : '+');
+    if (current >= target) clearInterval(timer);
+  }, 16);
+}
+const counters = document.querySelectorAll('.counter');
+const counterObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { animateCounter(e.target); counterObs.unobserve(e.target); } });
+}, { threshold: 0.5 });
+counters.forEach(c => counterObs.observe(c));
+
+// ─── FAQ ACCORDION ───
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const answer = item.querySelector('.faq-answer');
+    const isOpen = item.classList.contains('open');
+    // close all
+    document.querySelectorAll('.faq-item.open').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-answer').style.maxHeight = null;
+      i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+
+// ─── FORM SUBMIT ───
+document.querySelector('.form-submit').addEventListener('click', (e) => {
+  e.preventDefault();
+  const nombre = document.getElementById('nombre').value.trim();
+  const tel = document.getElementById('telefono').value.trim();
+  if (!nombre || !tel) {
+    alert('Por favor, introduce tu nombre y teléfono.');
+    return;
+  }
+  const msg = `¡Formulario enviado! Gracias, ${nombre}. Nos ponemos en contacto contigo en menos de 2 horas al ${tel}.`;
+  alert(msg);
+});
+</script>
+</body>
+</html>

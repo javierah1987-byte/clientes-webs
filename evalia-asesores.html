@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evalia Asesores | Asesoría Fiscal, Laboral y Contable en Las Palmas de Gran Canaria</title>
+<meta name="description" content="Asesoría fiscal, laboral y contable en Las Palmas de Gran Canaria para autónomos y pymes. Más de 15 años de experiencia. Gestión integral sin sorpresas. Solicita consulta gratuita.">
+<link rel="canonical" href="https://www.evaliaasesores.es/">
+<meta property="og:title" content="Evalia Asesores | Asesoría Fiscal y Laboral Las Palmas de Gran Canaria">
+<meta property="og:description" content="Asesoría integral para autónomos y pymes en Las Palmas de Gran Canaria. Fiscal, contable, laboral y mercantil. Solicita tu primera consulta gratuita.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=630&fit=crop">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Evalia Asesores",
+  "description": "Asesoría fiscal, laboral y contable para autónomos y pymes en Las Palmas de Gran Canaria",
+  "url": "https://www.evaliaasesores.es",
+  "telephone": "+34 928 456 789",
+  "email": "info@evaliaasesores.es",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Mayor de Triana, 82, 2ª planta",
+    "addressLocality": "Las Palmas de Gran Canaria",
+    "postalCode": "35002",
+    "addressCountry": "ES"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 28.1235, "longitude": -15.4366 },
+  "openingHours": "Mo-Fr 09:00-19:00",
+  "priceRange": "€€",
+  "areaServed": "Las Palmas de Gran Canaria"
+}
+</script>
+<style>
+  :root {
+    --verde: #3A9B8A;
+    --verde-dark: #2d7a6c;
+    --verde-light: #e8f5f3;
+    --dorado: #C9A84C;
+    --dorado-dark: #a8873c;
+    --gris-oscuro: #2c3342;
+    --gris-medio: #4a5568;
+    --gris-claro: #f7f8fa;
+    --blanco: #ffffff;
+    --texto: #2c3342;
+    --sombra: 0 4px 24px rgba(44,51,66,0.10);
+    --sombra-hover: 0 8px 40px rgba(44,51,66,0.18);
+    --radio: 10px;
+    --fuente-titulo: 'Cormorant Garamond', Georgia, serif;
+    --fuente-texto: 'Nunito Sans', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--fuente-texto); color: var(--texto); background: var(--blanco); line-height: 1.7; }
+  a { text-decoration: none; color: inherit; }
+  img { max-width: 100%; height: auto; display: block; }
+
+  /* SKIP LINK */
+  .skip-link { position: absolute; top: -100px; left: 0; background: var(--verde); color: #fff; padding: 8px 16px; z-index: 9999; border-radius: 0 0 8px 0; transition: top .2s; }
+  .skip-link:focus { top: 0; }
+
+  /* SCROLL PROGRESS */
+  #scroll-progress { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, var(--verde), var(--dorado)); z-index: 9998; width: 0%; transition: width .1s; }
+
+  /* NAV */
+  nav { position: sticky; top: 0; z-index: 1000; background: rgba(255,255,255,0.97); backdrop-filter: blur(12px); box-shadow: 0 1px 0 rgba(0,0,0,0.08); }
+  .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .nav-logo { display: flex; align-items: center; gap: 12px; }
+  .nav-logo-mark { font-family: var(--fuente-titulo); font-size: 22px; font-weight: 700; color: var(--dorado); letter-spacing: -1px; }
+  .nav-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+  .nav-logo-name { font-family: var(--fuente-titulo); font-size: 20px; font-weight: 600; color: var(--verde); letter-spacing: 2px; text-transform: uppercase; }
+  .nav-logo-sub { font-size: 10px; font-weight: 600; color: var(--gris-medio); letter-spacing: 3px; text-transform: uppercase; }
+  .nav-links { display: flex; align-items: center; gap: 32px; }
+  .nav-links a { font-size: 14px; font-weight: 600; color: var(--gris-medio); letter-spacing: 0.5px; transition: color .2s; }
+  .nav-links a:hover { color: var(--verde); }
+  .nav-cta { background: var(--verde); color: #fff !important; padding: 10px 22px; border-radius: 6px; font-size: 14px !important; font-weight: 700 !important; transition: background .2s, transform .2s !important; }
+  .nav-cta:hover { background: var(--verde-dark) !important; transform: translateY(-1px); }
+  .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; flex-direction: column; gap: 5px; }
+  .hamburger span { display: block; width: 24px; height: 2px; background: var(--gris-oscuro); transition: all .3s; border-radius: 2px; }
+  .mobile-menu { display: none; position: fixed; inset: 0; background: rgba(255,255,255,0.99); z-index: 999; flex-direction: column; align-items: center; justify-content: center; gap: 32px; }
+  .mobile-menu.active { display: flex; }
+  .mobile-menu a { font-family: var(--fuente-titulo); font-size: 28px; color: var(--verde); font-weight: 600; }
+  .mobile-close { position: absolute; top: 20px; right: 24px; background: none; border: none; font-size: 32px; cursor: pointer; color: var(--gris-medio); }
+
+  /* HERO */
+  .hero { min-height: 92vh; display: grid; grid-template-columns: 1fr 1fr; position: relative; overflow: hidden; }
+  .hero-content { background: var(--gris-oscuro); display: flex; flex-direction: column; justify-content: center; padding: 80px 64px 80px 80px; position: relative; z-index: 2; }
+  .hero-content::after { content: ''; position: absolute; right: -40px; top: 0; bottom: 0; width: 80px; background: var(--gris-oscuro); clip-path: polygon(0 0, 0 100%, 100% 100%); z-index: 3; }
+  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.3); color: var(--dorado); padding: 6px 14px; border-radius: 100px; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 24px; width: fit-content; }
+  .hero-badge::before { content: ''; width: 6px; height: 6px; background: var(--dorado); border-radius: 50%; }
+  .hero h1 { font-family: var(--fuente-titulo); font-size: clamp(2.2rem, 3.5vw, 3.4rem); font-weight: 600; color: var(--blanco); line-height: 1.2; margin-bottom: 20px; }
+  .hero h1 em { font-style: normal; color: var(--dorado); }
+  .hero-sub { font-size: 16px; color: rgba(255,255,255,0.72); max-width: 460px; margin-bottom: 36px; line-height: 1.8; }
+  .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 48px; }
+  .btn-primary { background: var(--verde); color: #fff; padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 15px; display: inline-flex; align-items: center; gap: 8px; transition: background .2s, transform .2s; border: none; cursor: pointer; }
+  .btn-primary:hover { background: var(--verde-dark); transform: translateY(-2px); }
+  .btn-secondary { background: transparent; color: #fff; padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 15px; border: 1.5px solid rgba(255,255,255,0.3); display: inline-flex; align-items: center; gap: 8px; transition: border-color .2s, background .2s; cursor: pointer; }
+  .btn-secondary:hover { border-color: var(--dorado); color: var(--dorado); }
+  .hero-social-proof { display: flex; align-items: center; gap: 20px; }
+  .stars { color: #f5b942; font-size: 18px; letter-spacing: 2px; }
+  .proof-text { font-size: 13px; color: rgba(255,255,255,0.6); }
+  .proof-text strong { color: #fff; }
+  .hero-image { position: relative; overflow: hidden; }
+  .hero-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .hero-image::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, rgba(44,51,66,0.3) 0%, transparent 50%); }
+
+  /* TRUST BAR */
+  .trust-bar { background: var(--verde); padding: 20px 24px; }
+  .trust-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+  .trust-item { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.95); font-size: 13.5px; font-weight: 600; }
+  .trust-icon { font-size: 20px; }
+
+  /* SECTIONS SHARED */
+  section { padding: 80px 24px; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-tag { font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--verde); margin-bottom: 12px; }
+  .section-title { font-family: var(--fuente-titulo); font-size: clamp(1.9rem, 3vw, 2.8rem); font-weight: 600; color: var(--gris-oscuro); line-height: 1.25; margin-bottom: 16px; }
+  .section-desc { font-size: 16px; color: var(--gris-medio); max-width: 560px; }
+  .section-header { margin-bottom: 52px; }
+  .section-header.centered { text-align: center; }
+  .section-header.centered .section-desc { margin: 0 auto; }
+
+  /* SERVICIOS */
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .service-card { border-radius: var(--radio); overflow: hidden; box-shadow: var(--sombra); transition: transform .3s, box-shadow .3s; position: relative; cursor: default; }
+  .service-card:hover { transform: translateY(-6px); box-shadow: var(--sombra-hover); }
+  .service-card-img { height: 200px; background: var(--gris-claro); overflow: hidden; }
+  .service-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+  .service-card:hover .service-card-img img { transform: scale(1.05); }
+  .service-card-body { padding: 24px; background: #fff; }
+  .service-card-icon { width: 44px; height: 44px; background: var(--verde-light); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+  .service-card-icon svg { color: var(--verde); }
+  .service-card h3 { font-family: var(--fuente-titulo); font-size: 1.3rem; font-weight: 600; color: var(--gris-oscuro); margin-bottom: 8px; }
+  .service-card p { font-size: 14px; color: var(--gris-medio); line-height: 1.7; }
+  .service-tag { display: inline-block; margin-top: 14px; font-size: 12px; font-weight: 700; color: var(--verde); border: 1px solid var(--verde); padding: 3px 10px; border-radius: 100px; }
+
+  /* PROCESO */
+  .proceso-bg { background: var(--gris-claro); }
+  .proceso-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
+  .proceso-steps::before { content: ''; position: absolute; top: 36px; left: 12.5%; right: 12.5%; height: 2px; background: linear-gradient(90deg, var(--verde), var(--dorado)); z-index: 0; }
+  .paso { text-align: center; padding: 0 20px; position: relative; z-index: 1; }
+  .paso-num { width: 72px; height: 72px; border-radius: 50%; background: var(--verde); color: #fff; font-family: var(--fuente-titulo); font-size: 1.6rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; border: 4px solid #fff; box-shadow: 0 4px 20px rgba(58,155,138,0.3); }
+  .paso h3 { font-family: var(--fuente-titulo); font-size: 1.1rem; font-weight: 600; color: var(--gris-oscuro); margin-bottom: 8px; }
+  .paso p { font-size: 13.5px; color: var(--gris-medio); line-height: 1.6; }
+
+  /* POR QUÉ ELEGIRNOS */
+  .porque-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+  .porque-img { border-radius: 16px; overflow: hidden; height: 480px; position: relative; }
+  .porque-img img { width: 100%; height: 100%; object-fit: cover; }
+  .porque-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(58,155,138,0.2) 0%, transparent 60%); border-radius: 16px; }
+  .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 40px; }
+  .stat-card { background: var(--verde-light); border-radius: var(--radio); padding: 20px; text-align: center; border-top: 3px solid var(--verde); }
+  .stat-num { font-family: var(--fuente-titulo); font-size: 2.4rem; font-weight: 700; color: var(--verde); line-height: 1; margin-bottom: 4px; }
+  .stat-label { font-size: 12px; color: var(--gris-medio); font-weight: 600; letter-spacing: 0.5px; }
+  .porque-list { list-style: none; display: flex; flex-direction: column; gap: 18px; }
+  .porque-list li { display: flex; align-items: flex-start; gap: 14px; font-size: 15px; color: var(--gris-medio); }
+  .porque-list li::before { content: '✓'; width: 22px; height: 22px; min-width: 22px; background: var(--verde); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; margin-top: 2px; }
+  .porque-list strong { color: var(--gris-oscuro); }
+
+  /* TESTIMONIOS */
+  .testimonios-bg { background: var(--gris-oscuro); }
+  .testimonios-bg .section-title { color: #fff; }
+  .testimonios-bg .section-tag { color: var(--dorado); }
+  .testimonios-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .testimonio-card { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radio); padding: 28px; transition: background .3s; }
+  .testimonio-card:hover { background: rgba(255,255,255,0.11); }
+  .test-stars { color: #f5b942; font-size: 16px; margin-bottom: 14px; letter-spacing: 2px; }
+  .test-text { font-size: 14.5px; color: rgba(255,255,255,0.78); line-height: 1.8; margin-bottom: 20px; font-style: italic; }
+  .test-author { display: flex; align-items: center; gap: 12px; }
+  .test-avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--verde); display: flex; align-items: center; justify-content: center; font-family: var(--fuente-titulo); font-size: 1.1rem; font-weight: 700; color: #fff; flex-shrink: 0; }
+  .test-name { font-weight: 700; color: #fff; font-size: 14px; }
+  .test-role { font-size: 12px; color: rgba(255,255,255,0.5); }
+
+  /* GALERÍA */
+  .galeria-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .galeria-item { border-radius: 8px; overflow: hidden; height: 200px; background: var(--gris-claro); }
+  .galeria-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+  .galeria-item:hover img { transform: scale(1.06); }
+  .galeria-item.tall { grid-row: span 2; height: auto; }
+
+  /* FAQ */
+  .faq-bg { background: var(--gris-claro); }
+  .faq-wrap { max-width: 720px; margin: 0 auto; }
+  .faq-item { background: #fff; border-radius: var(--radio); margin-bottom: 12px; overflow: hidden; border: 1px solid rgba(0,0,0,0.06); }
+  .faq-q { width: 100%; background: none; border: none; padding: 20px 24px; text-align: left; font-family: var(--fuente-texto); font-size: 15px; font-weight: 700; color: var(--gris-oscuro); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; transition: color .2s; }
+  .faq-q:hover { color: var(--verde); }
+  .faq-q[aria-expanded="true"] { color: var(--verde); }
+  .faq-arrow { width: 20px; height: 20px; border-radius: 50%; background: var(--verde-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform .3s; }
+  .faq-q[aria-expanded="true"] .faq-arrow { transform: rotate(180deg); background: var(--verde); }
+  .faq-q[aria-expanded="true"] .faq-arrow svg { color: #fff; }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height .4s ease, padding .3s; padding: 0 24px; font-size: 14.5px; color: var(--gris-medio); line-height: 1.8; }
+  .faq-a.open { max-height: 400px; padding: 0 24px 20px; }
+
+  /* CTA FINAL */
+  .cta-final { position: relative; overflow: hidden; background: var(--gris-oscuro); }
+  .cta-bg-img { position: absolute; inset: 0; z-index: 0; }
+  .cta-bg-img img { width: 100%; height: 100%; object-fit: cover; opacity: 0.15; }
+  .cta-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(44,51,66,0.95) 0%, rgba(58,155,138,0.3) 100%); z-index: 1; }
+  .cta-content { position: relative; z-index: 2; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; padding: 80px 24px; }
+  .cta-left h2 { font-family: var(--fuente-titulo); font-size: clamp(1.8rem, 3vw, 2.8rem); color: #fff; font-weight: 600; line-height: 1.2; margin-bottom: 16px; }
+  .cta-left h2 em { font-style: normal; color: var(--dorado); }
+  .cta-left p { font-size: 15px; color: rgba(255,255,255,0.7); margin-bottom: 32px; line-height: 1.8; }
+  .cta-contacto { display: flex; flex-direction: column; gap: 16px; }
+  .cta-link { display: flex; align-items: center; gap: 14px; color: rgba(255,255,255,0.85); font-size: 15px; transition: color .2s; }
+  .cta-link:hover { color: var(--dorado); }
+  .cta-link-icon { width: 42px; height: 42px; border-radius: 50%; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .form-card { background: #fff; border-radius: 16px; padding: 36px; box-shadow: 0 20px 60px rgba(0,0,0,0.25); }
+  .form-card h3 { font-family: var(--fuente-titulo); font-size: 1.4rem; font-weight: 600; color: var(--gris-oscuro); margin-bottom: 24px; }
+  .form-group { margin-bottom: 16px; }
+  .form-group label { display: block; font-size: 12.5px; font-weight: 700; color: var(--gris-medio); letter-spacing: 0.5px; margin-bottom: 6px; text-transform: uppercase; }
+  .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 8px; font-family: var(--fuente-texto); font-size: 14px; color: var(--texto); transition: border-color .2s; outline: none; background: #fff; }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--verde); box-shadow: 0 0 0 3px rgba(58,155,138,0.12); }
+  .form-group textarea { resize: vertical; min-height: 80px; }
+  .form-submit { width: 100%; padding: 14px; background: var(--verde); color: #fff; border: none; border-radius: 8px; font-family: var(--fuente-texto); font-size: 15px; font-weight: 700; cursor: pointer; transition: background .2s, transform .2s; }
+  .form-submit:hover { background: var(--verde-dark); transform: translateY(-1px); }
+  .form-trust { display: flex; align-items: center; gap: 8px; margin-top: 12px; font-size: 12px; color: var(--gris-medio); }
+
+  /* FOOTER */
+  footer { background: #1a1f2e; padding: 60px 24px 32px; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 48px; margin-bottom: 48px; }
+  .footer-logo-name { font-family: var(--fuente-titulo); font-size: 22px; color: var(--verde); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px; }
+  .footer-logo-mark { font-family: var(--fuente-titulo); font-size: 28px; color: var(--dorado); font-weight: 700; margin-bottom: 8px; }
+  .footer-desc { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.8; max-width: 280px; margin-top: 12px; }
+  .footer-col h4 { font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 20px; }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-links a { font-size: 14px; color: rgba(255,255,255,0.6); transition: color .2s; }
+  .footer-links a:hover { color: var(--verde); }
+  .footer-contact-item { display: flex; align-items: center; gap: 10px; font-size: 14px; color: rgba(255,255,255,0.6); margin-bottom: 12px; }
+  .footer-contact-item svg { color: var(--verde); flex-shrink: 0; }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; gap: 16px; }
+  .footer-copy { font-size: 13px; color: rgba(255,255,255,0.35); }
+  .footer-legal { display: flex; gap: 20px; }
+  .footer-legal a { font-size: 13px; color: rgba(255,255,255,0.35); transition: color .2s; }
+  .footer-legal a:hover { color: var(--verde); }
+
+  /* WHATSAPP FLOTANTE */
+  .whatsapp-float { position: fixed; bottom: 28px; right: 28px; z-index: 997; }
+  .whatsapp-btn { width: 58px; height: 58px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 24px rgba(37,211,102,0.4); transition: transform .2s, box-shadow .2s; cursor: pointer; }
+  .whatsapp-btn:hover { transform: scale(1.1); box-shadow: 0 10px 32px rgba(37,211,102,0.5); }
+  .whatsapp-pulse { position: absolute; top: 0; right: 0; width: 58px; height: 58px; border-radius: 50%; background: #25D366; opacity: 0.4; animation: pulse 2s infinite; }
+  @keyframes pulse { 0% { transform: scale(1); opacity: 0.4; } 70% { transform: scale(1.5); opacity: 0; } 100% { transform: scale(1.5); opacity: 0; } }
+
+  /* REVEAL ANIMATION */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* RESPONSIVE */
+  @media (max-width: 1024px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .proceso-steps { grid-template-columns: repeat(2, 1fr); }
+    .proceso-steps::before { display: none; }
+    .testimonios-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 640px) {
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-content { padding: 60px 24px; }
+    .hero-content::after { display: none; }
+    .hero-image { height: 280px; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .services-grid { grid-template-columns: 1fr; }
+    .proceso-steps { grid-template-columns: 1fr; gap: 32px; }
+    .porque-grid { grid-template-columns: 1fr; }
+    .testimonios-grid { grid-template-columns: 1fr; }
+    .galeria-grid { grid-template-columns: repeat(2, 1fr); }
+    .cta-content { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+    .footer-bottom { flex-direction: column; align-items: flex-start; }
+    .stats-row { grid-template-columns: repeat(3,1fr); gap: 12px; }
+    section { padding: 56px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div id="scroll-progress" role="progressbar" aria-hidden="true"></div>
+<a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Menú de navegación">
+  <button class="mobile-close" id="mobileClose" aria-label="Cerrar menú">&times;</button>
+  <a href="#servicios" onclick="closeMobile()">Servicios</a>
+  <a href="#proceso" onclick="closeMobile()">Cómo trabajamos</a>
+  <a href="#nosotros" onclick="closeMobile()">Nosotros</a>
+  <a href="#testimonios" onclick="closeMobile()">Opiniones</a>
+  <a href="#faq" onclick="closeMobile()">FAQ</a>
+  <a href="#contacto" onclick="closeMobile()" style="background:var(--verde);color:#fff;padding:14px 32px;border-radius:8px;">Consulta gratis</a>
+</div>
+
+<!-- NAV -->
+<nav role="navigation" aria-label="Navegación principal">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" aria-label="Evalia Asesores - Inicio">
+      <div class="nav-logo-mark">I&amp;R</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">EVALIA</span>
+        <span class="nav-logo-sub">asesores</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Cómo trabajamos</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#testimonios">Opiniones</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto" class="nav-cta">Consulta gratuita</a>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<main id="main">
+<section class="hero" aria-label="Presentación">
+  <div class="hero-content">
+    <div class="hero-badge">Asesoría integral en Las Palmas de Gran Canaria</div>
+    <h1>Tu asesoría fiscal en Las Palmas<br>que <em>trabaja contigo</em></h1>
+    <p class="hero-sub">Gestión fiscal, laboral y contable para autónomos y pymes. Nos ocupamos de todo para que tú te centres en hacer crecer tu negocio.</p>
+    <div class="hero-btns">
+      <a href="#contacto" class="btn-primary" aria-label="Solicitar primera consulta gratuita">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+        Primera consulta gratis
+      </a>
+      <a href="https://wa.me/34912456789" class="btn-secondary" aria-label="Contactar por WhatsApp" target="_blank" rel="noopener noreferrer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.858L.057 23.429a.5.5 0 00.609.61l5.687-1.49A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.961 0-3.791-.542-5.352-1.482l-.383-.228-3.975 1.042 1.06-3.868-.25-.397A9.812 9.812 0 012.182 12C2.182 6.565 6.565 2.182 12 2.182c5.435 0 9.818 4.383 9.818 9.818 0 5.435-4.383 9.818-9.818 9.818z"/></svg>
+        WhatsApp directo
+      </a>
+    </div>
+    <div class="hero-social-proof">
+      <div class="stars" aria-label="5 estrellas">★★★★★</div>
+      <p class="proof-text"><strong>+350 clientes</strong> confían en nosotros</p>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&h=800&fit=crop&auto=format" alt="Asesor fiscal Las Palmas de Gran Canaria trabajando con un cliente empresario en consulta profesional" width="900" height="800">
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar" role="complementary" aria-label="Garantías">
+  <div class="trust-inner">
+    <div class="trust-item"><span class="trust-icon" aria-hidden="true">🛡️</span> Gestión 100% sin errores garantizada</div>
+    <div class="trust-item"><span class="trust-icon" aria-hidden="true">⚡</span> Respuesta en menos de 24h</div>
+    <div class="trust-item"><span class="trust-icon" aria-hidden="true">📱</span> Asesor personal asignado</div>
+    <div class="trust-item"><span class="trust-icon" aria-hidden="true">🔒</span> Confidencialidad total RGPD</div>
+    <div class="trust-item"><span class="trust-icon" aria-hidden="true">📋</span> Sin letra pequeña ni sorpresas</div>
+  </div>
+</div>
+
+<!-- SERVICIOS -->
+<section id="servicios" aria-labelledby="servicios-title">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <p class="section-tag">Nuestros servicios</p>
+      <h2 class="section-title" id="servicios-title">Asesoría integral para autónomos y pymes en Las Palmas de Gran Canaria</h2>
+      <p class="section-desc">Todo lo que necesita tu negocio en un solo lugar. Nos adaptamos a tu tamaño y sector para que siempre estés al día.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=300&fit=crop&auto=format" alt="Asesoría fiscal Las Palmas Gran Canaria - documentos tributarios y calculadora" width="600" height="300" loading="lazy">
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon">
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z"/></svg>
+          </div>
+          <h3>Asesoría Fiscal</h3>
+          <p>IVA, IRPF, Impuesto de Sociedades, declaración de la renta. Optimizamos tu carga fiscal para que pagues solo lo justo y evites sanciones de Hacienda.</p>
+          <span class="service-tag">Autónomos · Pymes · Particulares</span>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=300&fit=crop&auto=format" alt="Gestión laboral Las Palmas Gran Canaria - nóminas y contratos de trabajo" width="600" height="300" loading="lazy">
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon">
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3>Gestión Laboral</h3>
+          <p>Nóminas, contratos, altas y bajas en Seguridad Social, ERTEs, despidos y conciliaciones. Cumplimiento laboral sin estrés ni riesgos para tu empresa.</p>
+          <span class="service-tag">Empresas con empleados</span>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&auto=format" alt="Contabilidad empresarial Las Palmas Gran Canaria - libros contables y balance" width="600" height="300" loading="lazy">
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon">
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+          </div>
+          <h3>Contabilidad y Cuentas</h3>
+          <p>Llevamos la contabilidad oficial de tu empresa, depósito de cuentas anuales, libros obligatorios y toda la documentación contable siempre al día.</p>
+          <span class="service-tag">SL · SA · Pymes</span>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=300&fit=crop&auto=format" alt="Asesoría mercantil Las Palmas Gran Canaria - constitución de empresa" width="600" height="300" loading="lazy">
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon">
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          </div>
+          <h3>Constitución de Empresas</h3>
+          <p>Alta de autónomos, constitución de SL y SA, trámites ante el Registro Mercantil y notaría. Te acompañamos en cada paso para arrancar sin errores.</p>
+          <span class="service-tag">Nuevos emprendedores</span>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=600&h=300&fit=crop&auto=format" alt="Asesoría jurídica Las Palmas Gran Canaria - defensa ante inspecciones Hacienda" width="600" height="300" loading="lazy">
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon">
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+          </div>
+          <h3>Defensa ante Inspecciones</h3>
+          <p>Te representamos y defendemos ante Hacienda, Seguridad Social y la Inspección de Trabajo. Gestionamos recursos, alegaciones y procedimientos sancionadores.</p>
+          <span class="service-tag">Autónomos · Empresas</span>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop&auto=format" alt="Planificación fiscal Las Palmas Gran Canaria - estrategia tributaria empresarial" width="600" height="300" loading="lazy">
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon">
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+          </div>
+          <h3>Planificación Fiscal Estratégica</h3>
+          <p>Análisis y estrategia para minimizar tu carga tributaria de forma legal. Planificamos el cierre fiscal, las inversiones y las decisiones empresariales con impacto fiscal.</p>
+          <span class="service-tag">Pymes · Patrimonios</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section id="proceso" class="proceso-bg" aria-labelledby="proceso-title">
+  <div class="section-inner">
+    <div class="section-header centered reveal">
+      <p class="section-tag">Cómo trabajamos</p>
+      <h2 class="section-title" id="proceso-title">4 pasos para tener tu asesoría fiscal en Madrid en orden</h2>
+      <p class="section-desc" style="margin:0 auto">Sin papeleo confuso, sin reuniones interminables. Solo resultados.</p>
+    </div>
+    <div class="proceso-steps reveal">
+      <div class="paso">
+        <div class="paso-num">1</div>
+        <h3>Consulta gratuita</h3>
+        <p>Analizamos tu situación actual sin compromiso. Identificamos riesgos y oportunidades fiscales en 30 minutos.</p>
+      </div>
+      <div class="paso">
+        <div class="paso-num">2</div>
+        <h3>Propuesta personalizada</h3>
+        <p>Te presentamos un plan a medida con servicios exactos y tarifas claras, sin sorpresas ni costes ocultos.</p>
+      </div>
+      <div class="paso">
+        <div class="paso-num">3</div>
+        <h3>Asesor personal asignado</h3>
+        <p>Tendrás un único interlocutor que conoce tu negocio y con quien siempre podrás hablar directamente.</p>
+      </div>
+      <div class="paso">
+        <div class="paso-num">4</div>
+        <h3>Gestión continua proactiva</h3>
+        <p>Te avisamos antes de cada vencimiento, te informamos de cambios normativos y optimizamos tu fiscalidad continuamente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ ELEGIRNOS -->
+<section id="nosotros" aria-labelledby="nosotros-title">
+  <div class="section-inner">
+    <div class="porque-grid">
+      <div class="reveal">
+        <p class="section-tag">Por qué Evalia Asesores</p>
+        <h2 class="section-title" id="nosotros-title">Más de 15 años acompañando negocios en Las Palmas de Gran Canaria</h2>
+        <div class="stats-row">
+          <div class="stat-card">
+            <div class="stat-num" data-target="350">0</div>
+            <div class="stat-label">Clientes activos</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-target="15">0</div>
+            <div class="stat-label">Años de exp.</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-target="98">0</div>
+            <div class="stat-label">% satisfacción</div>
+          </div>
+        </div>
+        <ul class="porque-list">
+          <li><strong>Asesor personal dedicado:</strong> siempre hablarás con la misma persona que conoce tu caso</li>
+          <li><strong>Respuesta garantizada en 24h:</strong> ninguna duda fiscal se queda sin respuesta al día siguiente</li>
+          <li><strong>Tarifa fija sin sorpresas:</strong> precio cerrado mensual sin extras inesperados en momentos de carga</li>
+          <li><strong>Gestión 100% digital:</strong> acceso a tu documentación desde cualquier lugar y en cualquier momento</li>
+          <li><strong>Proactivos, no reactivos:</strong> te avisamos antes de cada vencimiento y de cambios en la normativa</li>
+        </ul>
+      </div>
+      <div class="porque-img reveal">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&h=700&fit=crop&auto=format" alt="Equipo de asesores fiscales de Evalia trabajando en Las Palmas de Gran Canaria con cliente pyme" width="600" height="700" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios" class="testimonios-bg" aria-labelledby="testimonios-title">
+  <div class="section-inner">
+    <div class="section-header centered reveal">
+      <p class="section-tag">Opiniones reales</p>
+      <h2 class="section-title" id="testimonios-title">Lo que dicen nuestros clientes</h2>
+    </div>
+    <div class="testimonios-grid">
+      <article class="testimonio-card reveal">
+        <div class="test-stars" aria-label="5 estrellas">★★★★★</div>
+        <p class="test-text">"Llevaba años con otra asesoría y siempre me llegaban sorpresas en la declaración. Con Evalia, por primera vez siento que alguien realmente lleva mis cuentas al día y me avisa antes de que pase algo."</p>
+        <div class="test-author">
+          <div class="test-avatar" aria-hidden="true">MC</div>
+          <div>
+            <div class="test-name">María C.</div>
+            <div class="test-role">Autónoma · Diseñadora gráfica, Las Palmas</div>
+          </div>
+        </div>
+      </article>
+      <article class="testimonio-card reveal">
+        <div class="test-stars" aria-label="5 estrellas">★★★★★</div>
+        <p class="test-text">"Montamos la empresa con ellos y en menos de dos semanas estábamos operativos. Gestionaron la SL, el alta de autónomos de los socios y la primera nómina sin que yo tuviese que preocuparme de nada."</p>
+        <div class="test-author">
+          <div class="test-avatar" aria-hidden="true">JR</div>
+          <div>
+            <div class="test-name">Javier R.</div>
+            <div class="test-role">CEO · Startup tecnológica, Las Palmas</div>
+          </div>
+        </div>
+      </article>
+      <article class="testimonio-card reveal">
+        <div class="test-stars" aria-label="5 estrellas">★★★★★</div>
+        <p class="test-text">"Tuvimos una inspección de Hacienda y el equipo de Evalia respondió de forma impecable. Documentaron todo perfectamente y cerraron el expediente sin sanción. No cambio de asesoría por nada."</p>
+        <div class="test-author">
+          <div class="test-avatar" aria-hidden="true">AM</div>
+          <div>
+            <div class="test-name">Ana M.</div>
+            <div class="test-role">Gerente · Hostelería, Las Palmas</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section aria-labelledby="galeria-title">
+  <div class="section-inner">
+    <div class="section-header centered reveal">
+      <p class="section-tag">Nuestras oficinas</p>
+      <h2 class="section-title" id="galeria-title">Un espacio diseñado para el éxito de tu negocio</h2>
+    </div>
+    <div class="galeria-grid reveal">
+      <div class="galeria-item tall">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=500&fit=crop&auto=format" alt="Oficinas modernas de Evalia Asesores en Las Palmas de Gran Canaria" width="400" height="500" loading="lazy">
+      </div>
+      <div class="galeria-item">
+        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&h=250&fit=crop&auto=format" alt="Sala de reuniones para consultas de asesoría fiscal en Las Palmas de Gran Canaria" width="400" height="250" loading="lazy">
+      </div>
+      <div class="galeria-item">
+        <img src="https://images.unsplash.com/photo-1573164713712-03790a178651?w=400&h=250&fit=crop&auto=format" alt="Asesor financiero atendiendo a cliente en consulta fiscal Las Palmas Gran Canaria" width="400" height="250" loading="lazy">
+      </div>
+      <div class="galeria-item">
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=250&fit=crop&auto=format" alt="Equipo de asesores laborales revisando documentación en Las Palmas de Gran Canaria" width="400" height="250" loading="lazy">
+      </div>
+      <div class="galeria-item">
+        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=400&h=250&fit=crop&auto=format" alt="Reunión estratégica de planificación fiscal para empresa en Las Palmas de Gran Canaria" width="400" height="250" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq-bg" aria-labelledby="faq-title">
+  <div class="section-inner">
+    <div class="section-header centered reveal">
+      <p class="section-tag">Preguntas frecuentes</p>
+      <h2 class="section-title" id="faq-title">Todo lo que necesitas saber antes de contratar una asesoría fiscal en Madrid</h2>
+    </div>
+    <div class="faq-wrap reveal">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq1">
+          ¿Cuánto cuesta una asesoría fiscal para autónomos en Las Palmas de Gran Canaria?
+          <span class="faq-arrow" aria-hidden="true">
+            <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7"/></svg>
+          </span>
+        </button>
+        <div class="faq-a" id="faq1" role="region">Nuestras tarifas para autónomos en Las Palmas de Gran Canaria empiezan desde 79€/mes e incluyen la gestión de IVA trimestral, IRPF, declaración de la renta y atención continuada. Para pymes el precio varía según el volumen de facturas y empleados. Solicita tu presupuesto personalizado sin compromiso y te daremos una tarifa cerrada sin sorpresas.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq2">
+          ¿Qué diferencia hay entre una asesoría y una gestoría fiscal en Las Palmas de Gran Canaria?
+          <span class="faq-arrow" aria-hidden="true">
+            <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7"/></svg>
+          </span>
+        </button>
+        <div class="faq-a" id="faq2" role="region">Una gestoría se centra en tramitar documentos y presentar modelos. Una asesoría fiscal como Evalia va más allá: analiza tu situación, detecta riesgos, propone optimizaciones legales y toma decisiones estratégicas junto a ti. No solo cumplimos con Hacienda, sino que te ayudamos a pagar menos dentro de la legalidad.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq3">
+          ¿Puedo cambiar de asesoría a mitad de año sin problemas?
+          <span class="faq-arrow" aria-hidden="true">
+            <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7"/></svg>
+          </span>
+        </button>
+        <div class="faq-a" id="faq3" role="region">Sí, se puede cambiar en cualquier momento del año. En Evalia nos encargamos de toda la transición: solicitar la documentación a tu asesoría anterior, revisar el histórico fiscal y laboral, y hacernos cargo de tus gestiones sin que tengas que preocuparte de ningún trámite. El cambio es totalmente transparente para Hacienda y la Seguridad Social.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq4">
+          ¿Necesito ir a vuestra oficina o puedo gestionarlo todo online?
+          <span class="faq-arrow" aria-hidden="true">
+            <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7"/></svg>
+          </span>
+        </button>
+        <div class="faq-a" id="faq4" role="region">Todo se puede gestionar 100% online. Contamos con un portal del cliente donde puedes subir facturas, consultar el estado de tus impuestos y comunicarte con tu asesor. Para clientes que lo prefieren, también ofrecemos reuniones presenciales en nuestras oficinas del centro de Las Palmas de Gran Canaria o videollamadas programadas.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq5">
+          ¿Qué pasa si me llega una notificación de Hacienda o una inspección?
+          <span class="faq-arrow" aria-hidden="true">
+            <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7"/></svg>
+          </span>
+        </button>
+        <div class="faq-a" id="faq5" role="region">En Evalia gestionamos y representamos a nuestros clientes ante cualquier requerimiento de la Agencia Tributaria, Seguridad Social o Inspección de Trabajo. Revisamos la documentación, preparamos alegaciones y recursos, y te acompañamos en todo el proceso. Nuestra experiencia en inspecciones nos permite defender tus intereses con eficacia y reducir o eliminar sanciones.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL + FORMULARIO -->
+<section id="contacto" class="cta-final" aria-labelledby="contacto-title">
+  <div class="cta-bg-img" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1400&h=700&fit=crop&auto=format" alt="" width="1400" height="700" loading="lazy">
+  </div>
+  <div class="cta-overlay" aria-hidden="true"></div>
+  <div class="cta-content">
+    <div class="cta-left reveal">
+      <h2 id="contacto-title">Deja de preocuparte por <em>Hacienda</em> y céntrate en crecer</h2>
+      <p>Primera consulta gratuita y sin compromiso. Te decimos exactamente qué necesitas y cuánto cuesta en menos de 30 minutos.</p>
+      <div class="cta-contacto">
+        <a href="tel:+34928456789" class="cta-link" aria-label="Llamar al teléfono de Evalia Asesores">
+          <span class="cta-link-icon">
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          </span>
+          +34 928 456 789
+        </a>
+        <a href="https://wa.me/34928456789" class="cta-link" aria-label="Escribir a WhatsApp de Evalia Asesores" target="_blank" rel="noopener noreferrer">
+          <span class="cta-link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          </span>
+          WhatsApp: +34 928 456 789
+        </a>
+        <a href="mailto:info@evaliaasesores.es" class="cta-link" aria-label="Enviar email a Evalia Asesores">
+          <span class="cta-link-icon">
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </span>
+          info@evaliaasesores.es
+        </a>
+        <div class="cta-link">
+          <span class="cta-link-icon">
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </span>
+          Calle Mayor de Triana, 82, 2ª planta · Las Palmas de Gran Canaria 35002
+        </div>
+      </div>
+    </div>
+    <div class="form-card reveal">
+      <h3>Solicita tu consulta gratuita</h3>
+      <div class="form-group">
+        <label for="nombre">Nombre y apellidos</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" autocomplete="name" required>
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono de contacto</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" autocomplete="tel" required>
+      </div>
+      <div class="form-group">
+        <label for="perfil">¿Eres autónomo o empresa?</label>
+        <select id="perfil" name="perfil">
+          <option value="">Selecciona tu perfil</option>
+          <option>Autónomo / Freelance</option>
+          <option>Empresa (SL, SA)</option>
+          <option>Emprendedor que quiere constituir empresa</option>
+          <option>Particular (declaración de la renta)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="necesidad">¿En qué podemos ayudarte?</label>
+        <textarea id="necesidad" name="necesidad" placeholder="Cuéntanos brevemente tu situación o lo que necesitas..."></textarea>
+      </div>
+      <button type="button" class="form-submit" onclick="handleFormSubmit()" aria-label="Enviar solicitud de consulta gratuita">
+        Quiero mi consulta gratuita →
+      </button>
+      <div class="form-trust">
+        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+        Tus datos están seguros. No hacemos spam. Nos comprometemos a responderte en menos de 24h.
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo-mark">I&amp;R</div>
+        <div class="footer-logo-name">EVALIA</div>
+        <p class="footer-desc">Asesoría fiscal, laboral y contable para autónomos y pymes en Las Palmas de Gran Canaria. Más de 15 años ayudando a empresas a crecer con tranquilidad.</p>
+      </div>
+      <nav aria-label="Servicios">
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="#servicios">Asesoría Fiscal</a></li>
+            <li><a href="#servicios">Gestión Laboral</a></li>
+            <li><a href="#servicios">Contabilidad</a></li>
+            <li><a href="#servicios">Constitución de empresas</a></li>
+            <li><a href="#servicios">Defensa ante Hacienda</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav aria-label="Empresa">
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul class="footer-links">
+            <li><a href="#nosotros">Quiénes somos</a></li>
+            <li><a href="#proceso">Cómo trabajamos</a></li>
+            <li><a href="#testimonios">Opiniones</a></li>
+            <li><a href="#faq">Preguntas frecuentes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <div class="footer-contact-item">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          +34 928 456 789
+        </div>
+        <div class="footer-contact-item">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          info@evaliaasesores.es
+        </div>
+        <div class="footer-contact-item">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          Calle Mayor de Triana, 82, 2ª · Las Palmas 35002
+        </div>
+        <div class="footer-contact-item">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Lun–Vie: 9:00 – 19:00
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Evalia Asesores SL · CIF: B-12345678 · Todos los derechos reservados</p>
+      <nav class="footer-legal" aria-label="Legal">
+        <a href="#">Aviso Legal</a>
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Política de Cookies</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOTANTE -->
+<div class="whatsapp-float">
+  <div class="whatsapp-pulse" aria-hidden="true"></div>
+  <a href="https://wa.me/34928456789" class="whatsapp-btn" aria-label="Contactar con Evalia Asesores por WhatsApp al +34 928 456 789" target="_blank" rel="noopener noreferrer">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.858L.057 23.429a.5.5 0 00.609.61l5.687-1.49A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.961 0-3.791-.542-5.352-1.482l-.383-.228-3.975 1.042 1.06-3.868-.25-.397A9.812 9.812 0 012.182 12C2.182 6.565 6.565 2.182 12 2.182c5.435 0 9.818 4.383 9.818 9.818 0 5.435-4.383 9.818-9.818 9.818z"/></svg>
+  </a>
+</div>
+
+<script>
+// SCROLL PROGRESS
+const progressBar = document.getElementById('scroll-progress');
+window.addEventListener('scroll', () => {
+  const scrollTop = document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+  progressBar.style.width = (scrollTop / scrollHeight * 100) + '%';
+}, { passive: true });
+
+// MOBILE MENU
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileClose = document.getElementById('mobileClose');
+hamburgerBtn.addEventListener('click', () => {
+  mobileMenu.classList.add('active');
+  hamburgerBtn.setAttribute('aria-expanded', 'true');
+});
+mobileClose.addEventListener('click', closeMobile);
+function closeMobile() {
+  mobileMenu.classList.remove('active');
+  hamburgerBtn.setAttribute('aria-expanded', 'false');
+}
+
+// REVEAL ON SCROLL
+const reveals = document.querySelectorAll('.reveal');
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 80);
+      revealObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+reveals.forEach(r => revealObs.observe(r));
+
+// ANIMATED COUNTERS
+const counters = document.querySelectorAll('[data-target]');
+const countObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const el = e.target;
+      const target = +el.dataset.target;
+      let count = 0;
+      const step = target / 60;
+      const timer = setInterval(() => {
+        count += step;
+        if (count >= target) { el.textContent = target + (target === 98 ? '%' : '+'); clearInterval(timer); }
+        else { el.textContent = Math.floor(count) + (target === 98 ? '%' : '+'); }
+      }, 20);
+      countObs.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+counters.forEach(c => countObs.observe(c));
+
+// FAQ ACCORDION
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+    document.querySelectorAll('.faq-q').forEach(b => {
+      b.setAttribute('aria-expanded', 'false');
+      document.getElementById(b.getAttribute('aria-controls')).classList.remove('open');
+    });
+    if (!isOpen) {
+      btn.setAttribute('aria-expanded', 'true');
+      document.getElementById(btn.getAttribute('aria-controls')).classList.add('open');
+    }
+  });
+});
+
+// FORM SUBMIT
+function handleFormSubmit() {
+  const nombre = document.getElementById('nombre').value.trim();
+  const tel = document.getElementById('telefono').value.trim();
+  if (!nombre || !tel) {
+    alert('Por favor, rellena al menos tu nombre y teléfono para que podamos contactarte.');
+    return;
+  }
+  const btn = document.querySelector('.form-submit');
+  btn.textContent = '✓ Solicitud enviada — Te llamamos en 24h';
+  btn.style.background = '#2d7a6c';
+  btn.disabled = true;
+}
+</script>
+</body>
+</html>

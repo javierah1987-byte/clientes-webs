@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insmoelca – Instalaciones Eléctricas en Gran Canaria desde 1989</title>
+  <meta name="description" content="Empresa líder en instalaciones eléctricas, energía solar y eficiencia energética en Gran Canaria. +35 años de experiencia. Presupuesto sin compromiso." />
+  <link rel="canonical" href="https://www.insmoelca.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Insmoelca – Instalaciones Eléctricas en Gran Canaria desde 1989" />
+  <meta property="og:description" content="Empresa líder en instalaciones eléctricas, energía solar y eficiencia energética en Gran Canaria. +35 años de experiencia. Presupuesto sin compromiso." />
+  <meta property="og:image" content="https://www.insmoelca.com/wp-content/uploads/2024/03/placas.jpg" />
+  <meta property="og:url" content="https://www.insmoelca.com/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Schema JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Insmoelca S.L.",
+    "alternateName": "Instalaciones y Montajes Eléctricos Canarios",
+    "url": "https://www.insmoelca.com/",
+    "telephone": "+34928570065",
+    "email": "insmoelca@insmoelca.com",
+    "foundingDate": "1989",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C/ Simón Bolívar nº 7, Parque Empresarial Las Rubiesas",
+      "addressLocality": "Telde",
+      "postalCode": "35214",
+      "addressRegion": "Las Palmas",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 27.9925,
+      "longitude": -15.4053
+    },
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"}
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "3.7",
+      "reviewCount": "10"
+    },
+    "areaServed": "Canarias",
+    "description": "Empresa especializada en instalaciones eléctricas industriales y residenciales, energías renovables, mantenimientos y eficiencia energética en Gran Canaria desde 1989.",
+    "hasCredential": ["ISO 9001", "ISO 14001", "OHSAS 18001"]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── CSS VARIABLES ──────────────────────────────────── */
+    :root {
+      --navy:    #0A1F3A;
+      --blue:    #1055A0;
+      --orange:  #E85B12;
+      --orange2: #FF7A35;
+      --light:   #F4F7FB;
+      --white:   #FFFFFF;
+      --gray:    #6B7A90;
+      --dark:    #0D1520;
+      --card-bg: #FFFFFF;
+      --border:  #DDE4EF;
+      --font-display: 'Syne', sans-serif;
+      --font-body:    'DM Sans', sans-serif;
+      --radius: 12px;
+      --shadow: 0 4px 32px rgba(10,31,58,0.10);
+      --shadow-lg: 0 12px 48px rgba(10,31,58,0.18);
+    }
+
+    /* ── RESET ──────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); background: var(--white); color: var(--navy); line-height: 1.6; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    /* ── SKIP LINK ──────────────────────────────────────── */
+    .skip-link { position: absolute; left: -999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+    .skip-link:focus { left: 0; top: 0; width: auto; height: auto; padding: 8px 16px; background: var(--orange); color: #fff; font-weight: 700; z-index: 9999; }
+
+    /* ── SCROLL PROGRESS ────────────────────────────────── */
+    #progress-bar {
+      position: fixed; top: 0; left: 0; height: 3px;
+      background: linear-gradient(90deg, var(--orange), var(--orange2));
+      z-index: 9999; width: 0%; transition: width 0.1s;
+    }
+
+    /* ── NAVIGATION ─────────────────────────────────────── */
+    #nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(10,31,58,0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; }
+    .nav-logo img { height: 40px; width: auto; }
+    .nav-logo-text { color: #fff; font-family: var(--font-display); font-weight: 700; font-size: 18px; letter-spacing: 0.02em; }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a { color: rgba(255,255,255,0.75); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: #fff; }
+    .nav-cta {
+      background: var(--orange); color: #fff;
+      padding: 10px 22px; border-radius: 8px;
+      font-size: 14px; font-weight: 600;
+      transition: background 0.2s, transform 0.15s;
+      white-space: nowrap;
+    }
+    .nav-cta:hover { background: var(--orange2); transform: translateY(-1px); }
+    .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: #fff; margin: 5px 0; border-radius: 2px; transition: 0.3s; }
+
+    /* ── HERO ───────────────────────────────────────────── */
+    #hero {
+      background: var(--dark);
+      min-height: 92vh;
+      display: flex; align-items: center;
+      position: relative; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('https://www.insmoelca.com/wp-content/uploads/2024/03/inst1-1024x768.jpg');
+      background-size: cover; background-position: center 30%;
+      opacity: 0.22;
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(10,31,58,0.85) 0%, rgba(16,85,160,0.3) 100%);
+    }
+    .hero-grid {
+      max-width: 1200px; margin: 0 auto; padding: 80px 24px;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 64px; align-items: center; position: relative; z-index: 1;
+      width: 100%;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(232,91,18,0.15); border: 1px solid rgba(232,91,18,0.4);
+      color: var(--orange2); font-size: 13px; font-weight: 600;
+      padding: 6px 14px; border-radius: 100px; margin-bottom: 24px;
+      letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    .hero-badge::before { content: '⚡'; }
+    .hero h1 {
+      font-family: var(--font-display); font-size: clamp(36px,5vw,58px);
+      font-weight: 800; color: #fff; line-height: 1.1;
+      margin-bottom: 20px; letter-spacing: -0.02em;
+    }
+    .hero h1 em { color: var(--orange2); font-style: normal; }
+    .hero-sub {
+      color: rgba(255,255,255,0.72); font-size: 18px; font-weight: 300;
+      max-width: 520px; margin-bottom: 36px; line-height: 1.65;
+    }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 40px; }
+    .btn-primary {
+      background: var(--orange); color: #fff;
+      padding: 15px 30px; border-radius: 10px;
+      font-weight: 600; font-size: 15px;
+      transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px;
+      border: none; cursor: pointer;
+    }
+    .btn-primary:hover { background: var(--orange2); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(232,91,18,0.4); }
+    .btn-secondary {
+      background: rgba(255,255,255,0.10); color: #fff;
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 15px 26px; border-radius: 10px;
+      font-weight: 500; font-size: 15px;
+      transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.18); }
+    .hero-social {
+      display: flex; align-items: center; gap: 12px;
+      color: rgba(255,255,255,0.7); font-size: 14px;
+    }
+    .stars { color: #FFBE00; font-size: 16px; }
+    .hero-img-wrap {
+      border-radius: 16px; overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+    }
+    .hero-img-wrap img {
+      width: 100%; height: 480px; object-fit: cover;
+      background-color: #1a2d4a;
+    }
+    .hero-img-badge {
+      position: absolute; bottom: 20px; left: 20px;
+      background: rgba(10,31,58,0.9); backdrop-filter: blur(8px);
+      color: #fff; padding: 12px 16px; border-radius: 10px;
+      display: flex; align-items: center; gap: 10px;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .hero-img-badge strong { font-size: 20px; font-family: var(--font-display); color: var(--orange2); }
+    .hero-img-badge span { font-size: 12px; color: rgba(255,255,255,0.7); }
+
+    /* ── TRUST BAR ──────────────────────────────────────── */
+    #trust {
+      background: var(--navy);
+      border-top: 1px solid rgba(255,255,255,0.07);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      padding: 24px;
+    }
+    .trust-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;
+    }
+    .trust-item {
+      display: flex; align-items: center; gap: 10px;
+      color: rgba(255,255,255,0.82); font-size: 14px; font-weight: 500;
+      padding: 10px 20px; border-radius: 8px;
+      background: rgba(255,255,255,0.06);
+    }
+    .trust-icon { font-size: 20px; }
+
+    /* ── SECTIONS ───────────────────────────────────────── */
+    section { padding: 96px 24px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label {
+      display: inline-block;
+      color: var(--orange); font-size: 13px; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-family: var(--font-display); font-size: clamp(28px,4vw,44px);
+      font-weight: 800; line-height: 1.15; letter-spacing: -0.02em;
+      color: var(--navy); margin-bottom: 16px;
+    }
+    .section-lead {
+      font-size: 18px; color: var(--gray); max-width: 640px;
+      line-height: 1.65; margin-bottom: 56px; font-weight: 300;
+    }
+
+    /* ── SERVICES ───────────────────────────────────────── */
+    #servicios { background: var(--light); }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+      gap: 24px;
+    }
+    .service-card {
+      background: var(--white); border-radius: var(--radius);
+      overflow: hidden; box-shadow: var(--shadow);
+      transition: transform 0.25s, box-shadow 0.25s;
+      border: 1px solid var(--border);
+    }
+    .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .service-card-img {
+      width: 100%; height: 200px; object-fit: cover;
+      background-color: #c8d6ea;
+    }
+    .service-card-body { padding: 24px; }
+    .service-card-icon { font-size: 28px; margin-bottom: 12px; }
+    .service-card h3 { font-family: var(--font-display); font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+    .service-card p { font-size: 14px; color: var(--gray); line-height: 1.6; }
+    .service-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      margin-top: 14px; font-size: 13px; font-weight: 600; color: var(--blue);
+      transition: gap 0.2s;
+    }
+    .service-link:hover { gap: 10px; }
+
+    /* ── PROCESS ────────────────────────────────────────── */
+    #proceso { background: var(--white); }
+    .process-steps {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 40px; position: relative;
+    }
+    .process-steps::before {
+      content: ''; position: absolute;
+      top: 40px; left: calc(16.66% + 32px); right: calc(16.66% + 32px);
+      height: 2px; background: linear-gradient(90deg, var(--orange), var(--blue));
+    }
+    .process-step { text-align: center; }
+    .step-num {
+      width: 80px; height: 80px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue), var(--navy));
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px; font-family: var(--font-display);
+      font-size: 28px; font-weight: 800; color: #fff;
+      box-shadow: 0 8px 24px rgba(16,85,160,0.3);
+      position: relative; z-index: 1;
+    }
+    .process-step h3 { font-family: var(--font-display); font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+    .process-step p { font-size: 14px; color: var(--gray); line-height: 1.6; max-width: 240px; margin: 0 auto; }
+
+    /* ── WHY ────────────────────────────────────────────── */
+    #porque { background: var(--dark); color: #fff; }
+    #porque h2 { color: #fff; }
+    #porque .section-lead { color: rgba(255,255,255,0.6); }
+    .why-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;
+    }
+    .why-args { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .why-card {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius); padding: 24px;
+      transition: background 0.25s;
+    }
+    .why-card:hover { background: rgba(255,255,255,0.10); }
+    .why-card-icon { font-size: 28px; margin-bottom: 12px; }
+    .why-card h3 { font-family: var(--font-display); font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+    .why-card p { font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.6; }
+    .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .stat-box {
+      background: linear-gradient(135deg, var(--blue), rgba(16,85,160,0.6));
+      border-radius: var(--radius); padding: 28px 20px; text-align: center;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .stat-num {
+      font-family: var(--font-display); font-size: 44px; font-weight: 800;
+      color: var(--orange2); line-height: 1;
+    }
+    .stat-unit { font-size: 24px; }
+    .stat-label { font-size: 13px; color: rgba(255,255,255,0.7); margin-top: 8px; }
+    .why-photo { border-radius: var(--radius); overflow: hidden; }
+    .why-photo img { width: 100%; height: 100%; min-height: 420px; object-fit: cover; background-color: #1a2d4a; }
+
+    /* ── TESTIMONIOS ────────────────────────────────────── */
+    #testimonios { background: var(--light); }
+    .testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .testi-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 28px; box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      transition: transform 0.25s;
+    }
+    .testi-card:hover { transform: translateY(-4px); }
+    .testi-stars { color: #FFBE00; font-size: 16px; margin-bottom: 14px; }
+    .testi-text { font-size: 15px; color: var(--gray); line-height: 1.7; margin-bottom: 20px; font-style: italic; }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .testi-avatar {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue), var(--navy));
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-weight: 700; font-size: 16px; flex-shrink: 0;
+    }
+    .testi-name { font-weight: 600; font-size: 14px; }
+    .testi-role { font-size: 12px; color: var(--gray); }
+
+    /* ── GALERÍA ────────────────────────────────────────── */
+    #galeria { background: var(--white); }
+    .gallery-grid {
+      display: grid; grid-template-columns: repeat(4,1fr);
+      grid-auto-rows: 220px; gap: 12px;
+    }
+    .gallery-item { border-radius: 10px; overflow: hidden; position: relative; }
+    .gallery-item.tall { grid-row: span 2; }
+    .gallery-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      background-color: #c8d6ea;
+      transition: transform 0.4s;
+    }
+    .gallery-item:hover img { transform: scale(1.05); }
+
+    /* ── SECTORES ───────────────────────────────────────── */
+    #sectores { background: var(--light); }
+    .sectores-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
+      gap: 16px;
+    }
+    .sector-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 28px 20px; text-align: center;
+      border: 1px solid var(--border); transition: all 0.25s;
+    }
+    .sector-card:hover { border-color: var(--blue); box-shadow: var(--shadow); transform: translateY(-3px); }
+    .sector-icon { font-size: 36px; margin-bottom: 12px; }
+    .sector-card h3 { font-family: var(--font-display); font-size: 15px; font-weight: 700; }
+
+    /* ── FAQ ────────────────────────────────────────────── */
+    #faq { background: var(--white); }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .faq-item {
+      border: 1px solid var(--border); border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .faq-q {
+      width: 100%; background: none; border: none; cursor: pointer;
+      padding: 20px 24px; text-align: left;
+      font-family: var(--font-body); font-size: 15px; font-weight: 600;
+      color: var(--navy); display: flex; justify-content: space-between; align-items: center;
+      gap: 12px; transition: background 0.2s;
+    }
+    .faq-q:hover { background: var(--light); }
+    .faq-q[aria-expanded="true"] { background: var(--navy); color: #fff; }
+    .faq-arrow {
+      font-size: 18px; transition: transform 0.3s; flex-shrink: 0;
+    }
+    .faq-q[aria-expanded="true"] .faq-arrow { transform: rotate(180deg); }
+    .faq-a {
+      display: none; padding: 0 24px 20px;
+      font-size: 14px; color: var(--gray); line-height: 1.7;
+    }
+    .faq-a.open { display: block; }
+
+    /* ── CTA FINAL ──────────────────────────────────────── */
+    #contacto { background: var(--navy); color: #fff; }
+    #contacto h2 { color: #fff; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+    .contact-form-wrap { }
+    .contact-intro { font-size: 17px; color: rgba(255,255,255,0.7); margin-bottom: 32px; line-height: 1.65; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; color: rgba(255,255,255,0.8); }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%; padding: 12px 16px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 8px; color: #fff; font-size: 14px;
+      font-family: var(--font-body); outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: rgba(255,255,255,0.4); }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--orange2); }
+    .form-group select option { background: var(--navy); }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    .form-submit {
+      width: 100%; padding: 15px; background: var(--orange);
+      border: none; border-radius: 10px; color: #fff;
+      font-size: 16px; font-weight: 700; font-family: var(--font-body);
+      cursor: pointer; transition: all 0.2s; margin-top: 8px;
+    }
+    .form-submit:hover { background: var(--orange2); transform: translateY(-1px); }
+    .form-trust { font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 12px; text-align: center; }
+    .contact-info h3 { font-family: var(--font-display); font-size: 24px; font-weight: 700; margin-bottom: 24px; }
+    .contact-items { display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px; }
+    .contact-item {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 16px 20px; background: rgba(255,255,255,0.06);
+      border-radius: 10px; border: 1px solid rgba(255,255,255,0.1);
+    }
+    .contact-item-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+    .contact-item-text strong { display: block; font-size: 13px; color: rgba(255,255,255,0.6); font-weight: 500; }
+    .contact-item-text a { font-size: 15px; font-weight: 600; color: #fff; transition: color 0.2s; }
+    .contact-item-text a:hover { color: var(--orange2); }
+    .contact-isos { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+    .iso-badge {
+      padding: 6px 14px; border-radius: 6px;
+      background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+      font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.7);
+    }
+
+    /* ── FOOTER ─────────────────────────────────────────── */
+    footer {
+      background: var(--dark);
+      border-top: 1px solid rgba(255,255,255,0.07);
+      padding: 40px 24px;
+    }
+    .footer-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px; padding-bottom: 32px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer-brand p { color: rgba(255,255,255,0.5); font-size: 14px; line-height: 1.7; margin-top: 12px; max-width: 280px; }
+    .footer-col h4 { color: rgba(255,255,255,0.5); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 14px; font-weight: 600; }
+    .footer-col a { display: block; color: rgba(255,255,255,0.65); font-size: 14px; margin-bottom: 10px; transition: color 0.2s; }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom {
+      max-width: 1200px; margin: 24px auto 0;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+      font-size: 13px; color: rgba(255,255,255,0.35);
+    }
+    .footer-legal { display: flex; gap: 20px; flex-wrap: wrap; }
+    .footer-legal a { color: rgba(255,255,255,0.35); transition: color 0.2s; }
+    .footer-legal a:hover { color: rgba(255,255,255,0.7); }
+    .footer-logo { font-family: var(--font-display); font-weight: 800; font-size: 18px; color: #fff; }
+    .footer-logo span { color: var(--orange2); }
+
+    /* ── WHATSAPP FLOAT ─────────────────────────────────── */
+    #whatsapp-btn {
+      position: fixed; bottom: 28px; right: 28px; z-index: 500;
+      width: 58px; height: 58px; border-radius: 50%;
+      background: #25D366; color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px; box-shadow: 0 6px 24px rgba(37,211,102,0.5);
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: none; cursor: pointer;
+    }
+    #whatsapp-btn:hover { transform: scale(1.1); box-shadow: 0 8px 32px rgba(37,211,102,0.65); }
+
+    /* ── SCROLL REVEAL ──────────────────────────────────── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── MOBILE ─────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-img-wrap { display: none; }
+      .hero-bg { opacity: 0.35; }
+      .why-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: repeat(2,1fr); }
+      .gallery-item.tall { grid-row: span 1; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+      .process-steps { grid-template-columns: 1fr; }
+      .process-steps::before { display: none; }
+      .testi-grid { grid-template-columns: 1fr 1fr; }
+      .faq-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      section { padding: 64px 20px; }
+      .nav-links { display: none; }
+      .hamburger { display: block; }
+      .nav-links.mobile-open {
+        display: flex; flex-direction: column;
+        position: fixed; top: 68px; left: 0; right: 0;
+        background: var(--navy); padding: 20px 24px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+      .hero-grid { padding: 60px 20px; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .why-args { grid-template-columns: 1fr; }
+      .testi-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 160px; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .trust-inner { flex-direction: column; align-items: stretch; }
+    }
+
+    /* ── FOCUS VISIBLE ──────────────────────────────────── */
+    :focus-visible { outline: 3px solid var(--orange2); outline-offset: 3px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+  <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
+
+  <!-- ── NAV ──────────────────────────────────────────── -->
+  <header>
+    <nav id="nav" role="navigation" aria-label="Navegación principal">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo" aria-label="Insmoelca – Inicio">
+          <img src="https://www.insmoelca.com/wp-content/uploads/2024/04/cropped-logo-para-cambiar.png" alt="Logo Insmoelca" height="40" width="120" />
+        </a>
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proceso">Cómo trabajamos</a></li>
+          <li><a href="#porque">Por qué Insmoelca</a></li>
+          <li><a href="#testimonios">Opiniones</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a href="#contacto" class="nav-cta" aria-label="Solicitar presupuesto gratuito">Pedir presupuesto</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ── HERO ──────────────────────────────────────── -->
+    <section id="hero" aria-label="Presentación principal">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">Electricistas en Gran Canaria desde 1989</div>
+          <h1>Instalaciones eléctricas en <em>Gran Canaria</em> que duran décadas</h1>
+          <p class="hero-sub">Instalaciones industriales, energía solar fotovoltaica y mantenimiento eléctrico en todo el archipiélago canario. Triple certificación ISO. 45 profesionales a tu servicio.</p>
+          <div class="hero-btns">
+            <a href="#contacto" class="btn-primary" aria-label="Solicitar presupuesto sin compromiso">
+              ⚡ Presupuesto sin compromiso
+            </a>
+            <a href="tel:+34928570065" class="btn-secondary" aria-label="Llamar a Insmoelca">
+              📞 928 570 065
+            </a>
+          </div>
+          <div class="hero-social">
+            <span class="stars" aria-label="Valoración 3.7 de 5 estrellas">★★★★☆</span>
+            <span>3.7/5 · Más de 35 años instalando en Canarias</span>
+          </div>
+        </div>
+        <div class="hero-img-wrap" aria-hidden="true">
+          <img src="https://www.insmoelca.com/wp-content/uploads/2024/03/inst1-1024x768.jpg"
+               alt="Instalación eléctrica industrial realizada por Insmoelca en Gran Canaria"
+               width="560" height="480" />
+          <div class="hero-img-badge">
+            <div>
+              <strong>+35</strong>
+              <span>años<br>de experiencia</span>
+            </div>
+            <div style="border-left:1px solid rgba(255,255,255,0.2);padding-left:12px">
+              <strong>45</strong>
+              <span>profesionales<br>certificados</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TRUST BAR ──────────────────────────────────── -->
+    <div id="trust" role="region" aria-label="Garantías y certificaciones">
+      <div class="trust-inner">
+        <div class="trust-item"><span class="trust-icon">🏅</span> ISO 9001 · Calidad garantizada</div>
+        <div class="trust-item"><span class="trust-icon">🌿</span> ISO 14001 · Gestión Ambiental</div>
+        <div class="trust-item"><span class="trust-icon">🛡️</span> OHSAS 18001 · Seguridad laboral</div>
+        <div class="trust-item"><span class="trust-icon">🏝️</span> Cobertura en todo el archipiélago</div>
+        <div class="trust-item"><span class="trust-icon">⚡</span> Instalador autorizado MT/BT</div>
+      </div>
+    </div>
+
+    <!-- ── SERVICIOS ──────────────────────────────────── -->
+    <section id="servicios" aria-labelledby="servicios-h2">
+      <div class="section-inner">
+        <span class="section-label">Nuestros servicios</span>
+        <h2 id="servicios-h2">Soluciones eléctricas completas<br>para cada proyecto</h2>
+        <p class="section-lead">Desde instalaciones en complejos hoteleros hasta plantas industriales y energía solar fotovoltaica. Gestionamos el proyecto completo, de principio a fin.</p>
+        <div class="services-grid">
+
+          <article class="service-card reveal">
+            <img src="https://www.insmoelca.com/wp-content/uploads/2024/03/b1.jpg"
+                 alt="Instalaciones eléctricas en baja tensión Gran Canaria"
+                 width="400" height="200" loading="lazy" />
+            <div class="service-card-body">
+              <div class="service-card-icon">⚡</div>
+              <h3>Instalaciones Eléctricas</h3>
+              <p>Baja y media tensión para industrias, hoteles, aeropuertos, residencias y espacios comerciales en Gran Canaria y todo el archipiélago.</p>
+              <a href="https://www.insmoelca.com/instalaciones/" class="service-link" aria-label="Ver detalle de instalaciones eléctricas">Ver detalle →</a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <img src="https://www.insmoelca.com/wp-content/uploads/2024/03/placas.jpg"
+                 alt="Instalación fotovoltaica solar Gran Canaria autoconsumo"
+                 width="400" height="200" loading="lazy" />
+            <div class="service-card-body">
+              <div class="service-card-icon">☀️</div>
+              <h3>Energías Renovables</h3>
+              <p>Instalaciones fotovoltaicas conectadas a red y de autoconsumo para empresas, industrias y parques eólicos en Canarias.</p>
+              <a href="https://www.insmoelca.com/renovables/" class="service-link" aria-label="Ver detalle de energías renovables">Ver detalle →</a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <img src="https://www.insmoelca.com/wp-content/uploads/2024/03/reformas.jpg"
+                 alt="Mantenimiento eléctrico preventivo y correctivo Gran Canaria"
+                 width="400" height="200" loading="lazy" />
+            <div class="service-card-body">
+              <div class="service-card-icon">🔧</div>
+              <h3>Mantenimientos</h3>
+              <p>Mantenimiento preventivo y correctivo de instalaciones eléctricas para garantizar la operatividad continua de tu empresa o industria.</p>
+              <a href="https://www.insmoelca.com/mantenimientos/" class="service-link" aria-label="Ver detalle de mantenimientos">Ver detalle →</a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <img src="https://www.insmoelca.com/wp-content/uploads/2024/03/fotovoltaicas.jpg"
+                 alt="Eficiencia energética y reducción de consumo Gran Canaria"
+                 width="400" height="200" loading="lazy" />
+            <div class="service-card-body">
+              <div class="service-card-icon">💡</div>
+              <h3>Eficiencia Energética</h3>
+              <p>Auditorías y proyectos de mejora para reducir el consumo eléctrico de tu empresa, con subvenciones disponibles en Canarias.</p>
+              <a href="https://www.insmoelca.com/eficiencia-energetica/" class="service-link" aria-label="Ver detalle de eficiencia energética">Ver detalle →</a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <img src="https://www.insmoelca.com/wp-content/uploads/2024/03/estructura.jpg"
+                 alt="Telecomunicaciones CCTV fibra óptica Gran Canaria"
+                 width="400" height="200" loading="lazy" />
+            <div class="service-card-body">
+              <div class="service-card-icon">📡</div>
+              <h3>Telecomunicaciones</h3>
+              <p>Redes de datos, fibra óptica, CCTV, sistemas de intrusión, megafonía, WiFi y videoporteros para edificios y empresas.</p>
+              <a href="https://www.insmoelca.com/instalaciones/" class="service-link" aria-label="Ver detalle de telecomunicaciones">Ver detalle →</a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <img src="https://www.insmoelca.com/wp-content/uploads/2024/03/instalaciones2.jpg"
+                 alt="Protección contra incendios instalación Gran Canaria"
+                 width="400" height="200" loading="lazy" />
+            <div class="service-card-body">
+              <div class="service-card-icon">🔥</div>
+              <h3>Protección contra Incendios</h3>
+              <p>Sistemas de detección, alarma y extinción de incendios para industrias, hoteles y edificios públicos en Gran Canaria.</p>
+              <a href="https://www.insmoelca.com/instalaciones/" class="service-link" aria-label="Ver detalle de protección contra incendios">Ver detalle →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROCESO ────────────────────────────────────── -->
+    <section id="proceso" aria-labelledby="proceso-h2">
+      <div class="section-inner">
+        <span class="section-label">Cómo trabajamos</span>
+        <h2 id="proceso-h2">Tres pasos para empezar<br>tu proyecto eléctrico</h2>
+        <p class="section-lead">Sin burocracia, sin sorpresas. Desde el primer contacto hasta la entrega del proyecto, un único interlocutor gestiona todo el proceso.</p>
+        <div class="process-steps">
+          <div class="process-step reveal">
+            <div class="step-num">1</div>
+            <h3>Contacto y estudio</h3>
+            <p>Nos describes tu proyecto por teléfono, email o formulario. En 24–48h un técnico visita las instalaciones y analiza el alcance del trabajo.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-num">2</div>
+            <h3>Presupuesto detallado</h3>
+            <p>Recibes un presupuesto claro y sin letra pequeña. Gestionamos licencias, legalización y subvenciones disponibles para tu proyecto en Canarias.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-num">3</div>
+            <h3>Ejecución y entrega</h3>
+            <p>Nuestro equipo ejecuta la obra con control de calidad ISO. Entrega con toda la documentación técnica y boletín eléctrico en regla.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── POR QUÉ ─────────────────────────────────────── -->
+    <section id="porque" aria-labelledby="porque-h2">
+      <div class="section-inner">
+        <div class="why-grid">
+          <div>
+            <span class="section-label" style="color:var(--orange2)">Por qué elegirnos</span>
+            <h2 id="porque-h2">La empresa eléctrica de referencia en Gran Canaria</h2>
+            <p class="section-lead">Más de 35 años ejecutando proyectos de cualquier escala con los más altos estándares de calidad y seguridad del sector.</p>
+            <div class="stats-grid reveal">
+              <div class="stat-box">
+                <div class="stat-num"><span class="counter" data-target="35">0</span><span class="stat-unit">+</span></div>
+                <div class="stat-label">Años de experiencia</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num"><span class="counter" data-target="45">0</span></div>
+                <div class="stat-label">Profesionales en plantilla</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num"><span class="counter" data-target="3">0</span></div>
+                <div class="stat-label">Certificaciones ISO</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num"><span class="counter" data-target="7">0</span></div>
+                <div class="stat-label">Islas con proyectos activos</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="why-args reveal">
+              <div class="why-card">
+                <div class="why-card-icon">🏆</div>
+                <h3>Triple certificación ISO</h3>
+                <p>ISO 9001, ISO 14001 y OHSAS 18001: garantía de calidad, respeto medioambiental y seguridad laboral en cada proyecto.</p>
+              </div>
+              <div class="why-card">
+                <div class="why-card-icon">🗺️</div>
+                <h3>Cobertura en Canarias</h3>
+                <p>Presencia en todas las islas del archipiélago. Respondemos con rapidez dondequiera que se encuentre tu instalación.</p>
+              </div>
+              <div class="why-card">
+                <div class="why-card-icon">🏗️</div>
+                <h3>Proyectos llave en mano</h3>
+                <p>Gestionamos el proyecto completo: ingeniería, permisos, ejecución, legalización y mantenimiento posterior.</p>
+              </div>
+              <div class="why-card">
+                <div class="why-card-icon">🔋</div>
+                <h3>Especialistas en renovables</h3>
+                <p>Instalaciones fotovoltaicas y eólicas para empresas e industrias. Gestionamos subvenciones y tramitación con Endesa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TESTIMONIOS ────────────────────────────────── -->
+    <section id="testimonios" aria-labelledby="testi-h2">
+      <div class="section-inner">
+        <span class="section-label">Opiniones de clientes</span>
+        <h2 id="testi-h2">Lo que dicen quienes confían en Insmoelca</h2>
+        <p class="section-lead">Empresas, promotoras y organismos públicos de todo el archipiélago llevan años trabajando con nosotros.</p>
+        <div class="testi-grid">
+          <article class="testi-card reveal">
+            <div class="testi-stars" aria-label="5 estrellas">★★★★★</div>
+            <p class="testi-text">"Llevamos más de 10 años contratando con Insmoelca el mantenimiento eléctrico de nuestro complejo hotelero. Siempre cumplen plazos, trabajan con total profesionalidad y resuelven cualquier incidencia con rapidez."</p>
+            <div class="testi-author">
+              <div class="testi-avatar" aria-hidden="true">CR</div>
+              <div>
+                <div class="testi-name">Carlos R.</div>
+                <div class="testi-role">Director Técnico · Complejo Hotelero, Gran Canaria</div>
+              </div>
+            </div>
+          </article>
+          <article class="testi-card reveal">
+            <div class="testi-stars" aria-label="5 estrellas">★★★★★</div>
+            <p class="testi-text">"Contratamos a Insmoelca para la instalación fotovoltaica de nuestra nave industrial en Telde. Gestionaron todo el papeleo y la subvención. El resultado fue impecable y en el plazo acordado."</p>
+            <div class="testi-author">
+              <div class="testi-avatar" aria-hidden="true">ML</div>
+              <div>
+                <div class="testi-name">María L.</div>
+                <div class="testi-role">Gerente · Empresa Industrial, Telde</div>
+              </div>
+            </div>
+          </article>
+          <article class="testi-card reveal">
+            <div class="testi-stars" aria-label="4 estrellas">★★★★☆</div>
+            <p class="testi-text">"Realizaron la instalación eléctrica completa de nuestro edificio de oficinas, incluyendo automatización, CCTV y telecomunicaciones. Equipo muy bien coordinado y documentación técnica perfecta."</p>
+            <div class="testi-author">
+              <div class="testi-avatar" aria-hidden="true">JM</div>
+              <div>
+                <div class="testi-name">Juan M.</div>
+                <div class="testi-role">Promotor Inmobiliario · Las Palmas de GC</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GALERÍA ─────────────────────────────────────── -->
+    <section id="galeria" aria-labelledby="galeria-h2">
+      <div class="section-inner">
+        <span class="section-label">Proyectos realizados</span>
+        <h2 id="galeria-h2">Obra ejecutada en Gran Canaria<br>y todo el archipiélago</h2>
+        <p class="section-lead">Instalaciones eléctricas, fotovoltaicas y de telecomunicaciones en hoteles, industrias, edificios públicos y urbanizaciones por toda Canarias.</p>
+        <div class="gallery-grid">
+          <div class="gallery-item tall reveal">
+            <img src="https://www.insmoelca.com/wp-content/uploads/2024/03/placas.jpg"
+                 alt="Instalación de placas solares fotovoltaicas en Gran Canaria"
+                 width="300" height="440" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal">
+            <img src="https://www.insmoelca.com/wp-content/uploads/2024/03/inst1-1024x768.jpg"
+                 alt="Instalación eléctrica industrial en Gran Canaria"
+                 width="300" height="220" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal">
+            <img src="https://www.insmoelca.com/wp-content/uploads/2024/03/b1.jpg"
+                 alt="Cuadros eléctricos instalados en empresa de Gran Canaria"
+                 width="300" height="220" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal">
+            <img src="https://www.insmoelca.com/wp-content/uploads/2024/03/estructura.jpg"
+                 alt="Estructura eléctrica industrial Insmoelca Canarias"
+                 width="300" height="220" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal">
+            <img src="https://www.insmoelca.com/wp-content/uploads/2024/03/instalaciones2.jpg"
+                 alt="Instalaciones eléctricas complejo industrial Telde"
+                 width="300" height="220" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal">
+            <img src="https://www.insmoelca.com/wp-content/uploads/2024/04/renovables2.jpg"
+                 alt="Instalación energía renovable fotovoltaica Gran Canaria"
+                 width="300" height="220" loading="lazy" />
+          </div>
+          <div class="gallery-item reveal">
+            <img src="https://www.insmoelca.com/wp-content/uploads/2024/03/reformas.jpg"
+                 alt="Reforma eléctrica y actualización instalación edificio"
+                 width="300" height="220" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SECTORES ───────────────────────────────────── -->
+    <section id="sectores" aria-labelledby="sectores-h2">
+      <div class="section-inner">
+        <span class="section-label">Sectores que atendemos</span>
+        <h2 id="sectores-h2">Tu sector tiene necesidades eléctricas específicas.<br>Las conocemos.</h2>
+        <p class="section-lead">Más de 35 años trabajando en todos los sectores económicos de Canarias nos dan la experiencia que otros no pueden igualar.</p>
+        <div class="sectores-grid">
+          <div class="sector-card reveal"><div class="sector-icon">🏨</div><h3>Hotelero y Turístico</h3></div>
+          <div class="sector-card reveal"><div class="sector-icon">🏭</div><h3>Industrial y Logístico</h3></div>
+          <div class="sector-card reveal"><div class="sector-icon">✈️</div><h3>Aeroportuario</h3></div>
+          <div class="sector-card reveal"><div class="sector-icon">🏗️</div><h3>Construcción y Promoción</h3></div>
+          <div class="sector-card reveal"><div class="sector-icon">🏪</div><h3>Comercial y Retail</h3></div>
+          <div class="sector-card reveal"><div class="sector-icon">🏘️</div><h3>Residencial y Urbanizaciones</h3></div>
+          <div class="sector-card reveal"><div class="sector-icon">🏋️</div><h3>Recintos Deportivos</h3></div>
+          <div class="sector-card reveal"><div class="sector-icon">🏛️</div><h3>Sector Público</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ────────────────────────────────────────── -->
+    <section id="faq" aria-labelledby="faq-h2">
+      <div class="section-inner">
+        <span class="section-label">Preguntas frecuentes</span>
+        <h2 id="faq-h2">Resolvemos tus dudas antes<br>de empezar</h2>
+        <p class="section-lead">Las preguntas más habituales de quienes buscan empresa de instalaciones eléctricas en Gran Canaria y Canarias.</p>
+        <div class="faq-grid" role="list">
+
+          <div class="faq-item reveal" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq1">
+              ¿Hacéis instalaciones eléctricas en toda Canarias o solo en Gran Canaria?
+              <span class="faq-arrow" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-a" id="faq1" role="region">
+              Insmoelca opera en todo el archipiélago canario. Desde nuestra sede en Telde gestionamos proyectos en Gran Canaria, Tenerife, Lanzarote, Fuerteventura y el resto de islas. Contamos con equipos desplazables para obras de cualquier envergadura.
+            </div>
+          </div>
+
+          <div class="faq-item reveal" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq2">
+              ¿Tramitáis las subvenciones para instalaciones fotovoltaicas en Canarias?
+              <span class="faq-arrow" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-a" id="faq2" role="region">
+              Sí. Gestionamos toda la tramitación burocrática de subvenciones autonómicas y nacionales para instalaciones de autoconsumo fotovoltaico en Canarias, tanto para empresas como para comunidades de propietarios. Consúltanos para conocer las ayudas vigentes.
+            </div>
+          </div>
+
+          <div class="faq-item reveal" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq3">
+              ¿Cuánto tiempo tardáis en dar un presupuesto de instalación eléctrica?
+              <span class="faq-arrow" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-a" id="faq3" role="region">
+              Normalmente en 24 a 48 horas desde la visita técnica. Para proyectos complejos que requieren ingeniería detallada, el plazo puede extenderse hasta 5 días. El presupuesto es siempre sin compromiso y sin coste.
+            </div>
+          </div>
+
+          <div class="faq-item reveal" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq4">
+              ¿Tenéis servicio de mantenimiento eléctrico para empresas e industrias?
+              <span class="faq-arrow" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-a" id="faq4" role="region">
+              Sí. Ofrecemos contratos de mantenimiento preventivo y correctivo adaptados a cada tipo de instalación. Garantizamos tiempos de respuesta óptimos para minimizar paradas en tu proceso productivo.
+            </div>
+          </div>
+
+          <div class="faq-item reveal" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq5">
+              ¿Qué certificaciones acreditan la calidad de Insmoelca?
+              <span class="faq-arrow" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-a" id="faq5" role="region">
+              Disponemos de triple certificación: ISO 9001 (Gestión de Calidad), ISO 14001 (Gestión Ambiental) y OHSAS 18001 (Seguridad y Salud Laboral). Estas normas garantizan procesos auditados externamente y una mejora continua en todos nuestros servicios.
+            </div>
+          </div>
+
+          <div class="faq-item reveal" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq6">
+              ¿Realizáis proyectos de media tensión y centros de transformación en Gran Canaria?
+              <span class="faq-arrow" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-a" id="faq6" role="region">
+              Sí. Además de instalaciones en baja tensión, ejecutamos líneas subterráneas de media tensión y centros de transformación de distribución pública y privada, incluyendo la tramitación con la compañía distribuidora.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACTO ───────────────────────────────────── -->
+    <section id="contacto" aria-labelledby="contacto-h2">
+      <div class="section-inner">
+        <div class="contact-grid">
+          <div class="contact-form-wrap">
+            <span class="section-label" style="color:var(--orange2)">Contacta con nosotros</span>
+            <h2 id="contacto-h2">Pide tu presupuesto<br>sin compromiso</h2>
+            <p class="contact-intro">Cuéntanos tu proyecto y te respondemos en menos de 24 horas. Sin letra pequeña, sin sorpresas.</p>
+            <div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombre">Nombre completo</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="telefono">Teléfono de contacto</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="928 000 000" autocomplete="tel" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="tu@empresa.com" autocomplete="email" />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="tipo">Tipo de cliente</label>
+                  <select id="tipo" name="tipo">
+                    <option value="">Selecciona...</option>
+                    <option>Empresa / Industria</option>
+                    <option>Promotora / Constructora</option>
+                    <option>Hotel / Touroperador</option>
+                    <option>Organismo Público</option>
+                    <option>Particular</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="servicio">Servicio de interés</label>
+                  <select id="servicio" name="servicio">
+                    <option value="">Selecciona...</option>
+                    <option>Instalaciones Eléctricas</option>
+                    <option>Energía Solar Fotovoltaica</option>
+                    <option>Mantenimiento Eléctrico</option>
+                    <option>Eficiencia Energética</option>
+                    <option>Telecomunicaciones</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="mensaje">Descripción del proyecto</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos brevemente tu proyecto o necesidad..."></textarea>
+              </div>
+              <button type="button" class="form-submit" onclick="alert('Formulario enviado. Nos pondremos en contacto en menos de 24 horas. ¡Gracias!')" aria-label="Enviar solicitud de presupuesto">
+                Solicitar presupuesto gratuito →
+              </button>
+              <p class="form-trust">🔒 Sin spam · Respuesta garantizada en menos de 24h · Sin compromiso</p>
+            </div>
+          </div>
+          <div class="contact-info">
+            <h3>También puedes contactarnos directamente</h3>
+            <div class="contact-items">
+              <div class="contact-item">
+                <span class="contact-item-icon" aria-hidden="true">📞</span>
+                <div class="contact-item-text">
+                  <strong>Teléfono</strong>
+                  <a href="tel:+34928570065" aria-label="Llamar a Insmoelca">928 570 065</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-icon" aria-hidden="true">✉️</span>
+                <div class="contact-item-text">
+                  <strong>Email</strong>
+                  <a href="mailto:insmoelca@insmoelca.com" aria-label="Enviar email a Insmoelca">insmoelca@insmoelca.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-icon" aria-hidden="true">📍</span>
+                <div class="contact-item-text">
+                  <strong>Dirección</strong>
+                  <a href="https://maps.app.goo.gl/fw8JsQukqf6o4VFY8" target="_blank" rel="noopener" aria-label="Ver ubicación en Google Maps">C/ Simón Bolívar nº 7, Parque Empresarial Las Rubiesas, 35214 Telde, Las Palmas</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-icon" aria-hidden="true">🕐</span>
+                <div class="contact-item-text">
+                  <strong>Horario</strong>
+                  <span style="font-size:15px;font-weight:600;color:#fff">Lunes a Viernes · 8:00 – 17:00</span>
+                </div>
+              </div>
+            </div>
+            <div class="contact-isos">
+              <span class="iso-badge">ISO 9001</span>
+              <span class="iso-badge">ISO 14001</span>
+              <span class="iso-badge">OHSAS 18001</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">Insmo<span>elca</span></div>
+        <p>Instalaciones y Montajes Eléctricos Canarios S.L. · Empresa fundada en 1989. Triple certificación ISO. Cobertura en todo el archipiélago canario.</p>
+      </div>
+      <nav class="footer-col" aria-label="Navegación footer servicios">
+        <h4>Servicios</h4>
+        <a href="https://www.insmoelca.com/instalaciones/">Instalaciones Eléctricas</a>
+        <a href="https://www.insmoelca.com/renovables/">Energías Renovables</a>
+        <a href="https://www.insmoelca.com/mantenimientos/">Mantenimientos</a>
+        <a href="https://www.insmoelca.com/eficiencia-energetica/">Eficiencia Energética</a>
+      </nav>
+      <nav class="footer-col" aria-label="Navegación footer empresa">
+        <h4>Empresa</h4>
+        <a href="https://www.insmoelca.com/quienes-somos/">Quiénes somos</a>
+        <a href="https://www.insmoelca.com/obras/">Obras realizadas</a>
+        <a href="#contacto">Contacto</a>
+        <a href="tel:+34928570065">928 570 065</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Insmoelca S.L. · CIF B35228733 · Telde, Las Palmas de Gran Canaria</span>
+      <div class="footer-legal">
+        <a href="https://www.insmoelca.com/politica-de-privacidad/">Política de Privacidad</a>
+        <a href="https://www.insmoelca.com/politica-de-cookies/">Cookies</a>
+        <a href="https://www.insmoelca.com/aviso-legal/">Aviso Legal</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── WHATSAPP FLOAT ──────────────────────────────────── -->
+  <a id="whatsapp-btn" href="https://wa.me/34928570065?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20vuestros%20servicios%20el%C3%A9ctricos."
+     aria-label="Contactar por WhatsApp con Insmoelca" target="_blank" rel="noopener">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script>
+    // ── SCROLL PROGRESS ──────────────────────────────────
+    const progressBar = document.getElementById('progress-bar');
+    window.addEventListener('scroll', () => {
+      const scrollTop = document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      progressBar.style.width = (scrollTop / scrollHeight * 100) + '%';
+    }, { passive: true });
+
+    // ── HAMBURGER ────────────────────────────────────────
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('mobile-open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('mobile-open')));
+
+    // ── SCROLL REVEAL ────────────────────────────────────
+    const reveals = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => revealObserver.observe(el));
+
+    // ── COUNTERS ─────────────────────────────────────────
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = +el.getAttribute('data-target');
+          let current = 0;
+          const step = Math.max(1, Math.ceil(target / 60));
+          const timer = setInterval(() => {
+            current = Math.min(current + step, target);
+            el.textContent = current;
+            if (current >= target) clearInterval(timer);
+          }, 25);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(el => counterObserver.observe(el));
+
+    // ── FAQ ACCORDION ────────────────────────────────────
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.faq-q').forEach(b => {
+          b.setAttribute('aria-expanded', 'false');
+          const ans = document.getElementById(b.getAttribute('aria-controls'));
+          if (ans) ans.classList.remove('open');
+        });
+        if (!expanded) {
+          btn.setAttribute('aria-expanded', 'true');
+          const ans = document.getElementById(btn.getAttribute('aria-controls'));
+          if (ans) ans.classList.add('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

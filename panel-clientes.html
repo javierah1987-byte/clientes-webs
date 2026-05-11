@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel de Webs — Clientes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0d0d0f;
+  --bg2:#16161a;
+  --bg3:#1e1e24;
+  --border:#2a2a35;
+  --border2:#3a3a48;
+  --text:#f0eff5;
+  --muted:#7a7990;
+  --accent:#6c63ff;
+  --accent2:#9c95ff;
+  --green:#22c55e;
+  --yellow:#f59e0b;
+  --red:#ef4444;
+  --blue:#38bdf8;
+  --radius:10px;
+  --font:'Syne',sans-serif;
+  --mono:'Space Mono',monospace;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--font);min-height:100vh;padding:0}
+
+/* TOP NAV */
+nav{
+  background:var(--bg2);
+  border-bottom:1px solid var(--border);
+  padding:0 2rem;
+  height:60px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:sticky;top:0;z-index:100;
+}
+.nav-logo{font-size:1.1rem;font-weight:800;letter-spacing:-0.5px;display:flex;align-items:center;gap:8px}
+.logo-dot{width:10px;height:10px;background:var(--accent);border-radius:50%;display:inline-block}
+.nav-stats{display:flex;gap:1.5rem;align-items:center}
+.nav-stat{font-size:12px;color:var(--muted);font-family:var(--mono)}
+.nav-stat span{color:var(--text);font-weight:700}
+
+/* MAIN */
+main{max-width:1200px;margin:0 auto;padding:2rem}
+
+/* HEADER */
+.page-header{margin-bottom:2rem;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:gap}
+.page-title{font-size:2rem;font-weight:800;letter-spacing:-1px}
+.page-title em{color:var(--accent);font-style:normal}
+
+/* STATS ROW */
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:2rem}
+.stat-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem}
+.stat-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;font-family:var(--mono)}
+.stat-value{font-size:2rem;font-weight:800;line-height:1}
+.stat-value.green{color:var(--green)}
+.stat-value.yellow{color:var(--yellow)}
+.stat-value.blue{color:var(--blue)}
+.stat-value.accent{color:var(--accent2)}
+
+/* TOOLBAR */
+.toolbar{display:flex;gap:1rem;margin-bottom:1.5rem;align-items:center;flex-wrap:wrap}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{
+  width:100%;
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:10px 14px 10px 38px;
+  color:var(--text);
+  font-family:var(--font);
+  font-size:14px;
+  outline:none;
+  transition:border-color 0.2s;
+}
+.search-box input:focus{border-color:var(--accent)}
+.search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:15px}
+.filter-btn{
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:10px 16px;
+  color:var(--muted);
+  font-size:13px;
+  font-family:var(--font);
+  cursor:pointer;
+  transition:all 0.2s;
+  white-space:nowrap;
+}
+.filter-btn:hover,.filter-btn.active{border-color:var(--accent);color:var(--text);background:rgba(108,99,255,0.1)}
+.add-btn{
+  background:var(--accent);
+  border:none;
+  border-radius:var(--radius);
+  padding:10px 20px;
+  color:#fff;
+  font-size:13px;
+  font-weight:600;
+  font-family:var(--font);
+  cursor:pointer;
+  transition:all 0.2s;
+  white-space:nowrap;
+  display:flex;align-items:center;gap:6px;
+}
+.add-btn:hover{background:#5a52e8;transform:translateY(-1px)}
+
+/* TABLE */
+.table-wrap{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+table{width:100%;border-collapse:collapse}
+thead{background:var(--bg3)}
+th{
+  padding:12px 16px;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  color:var(--muted);
+  text-align:left;
+  font-family:var(--mono);
+  border-bottom:1px solid var(--border);
+  white-space:nowrap;
+}
+td{padding:14px 16px;border-bottom:1px solid var(--border);font-size:14px;vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:rgba(255,255,255,0.02)}
+
+.client-name{font-weight:600;font-size:15px}
+.client-sector{font-size:12px;color:var(--muted);margin-top:2px}
+.url-cell{font-family:var(--mono);font-size:12px;color:var(--blue)}
+.url-cell a{color:var(--blue);text-decoration:none}
+.url-cell a:hover{text-decoration:underline}
+
+/* STATUS BADGES */
+.badge{
+  display:inline-flex;align-items:center;gap:5px;
+  padding:4px 10px;border-radius:20px;
+  font-size:11px;font-weight:600;font-family:var(--mono);
+  white-space:nowrap;
+}
+.badge::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor;opacity:0.8}
+.badge-creada{background:rgba(108,99,255,0.15);color:var(--accent2)}
+.badge-enviada{background:rgba(56,189,248,0.15);color:var(--blue)}
+.badge-interesado{background:rgba(245,158,11,0.15);color:var(--yellow)}
+.badge-cerrado{background:rgba(34,197,94,0.15);color:var(--green)}
+.badge-descartado{background:rgba(239,68,68,0.12);color:var(--red)}
+
+/* ACTION BUTTONS */
+.actions{display:flex;gap:6px;align-items:center}
+.btn-icon{
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:8px;
+  width:32px;height:32px;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;
+  color:var(--muted);
+  font-size:14px;
+  transition:all 0.15s;
+  text-decoration:none;
+}
+.btn-icon:hover{border-color:var(--border2);color:var(--text)}
+.btn-icon.copy:hover{border-color:var(--accent);color:var(--accent2)}
+.btn-icon.email:hover{border-color:var(--blue);color:var(--blue)}
+.btn-icon.view:hover{border-color:var(--green);color:var(--green)}
+
+/* STATUS SELECT */
+select.status-sel{
+  background:transparent;
+  border:none;
+  font-family:var(--mono);
+  font-size:11px;
+  font-weight:600;
+  cursor:pointer;
+  outline:none;
+  -webkit-appearance:none;
+  appearance:none;
+  padding:0;
+}
+
+/* MODAL */
+.modal-overlay{
+  display:none;
+  position:fixed;inset:0;
+  background:rgba(0,0,0,0.7);
+  z-index:200;
+  align-items:center;justify-content:center;
+}
+.modal-overlay.open{display:flex}
+.modal{
+  background:var(--bg2);
+  border:1px solid var(--border2);
+  border-radius:14px;
+  padding:2rem;
+  width:90%;max-width:500px;
+}
+.modal-title{font-size:1.2rem;font-weight:800;margin-bottom:1.5rem}
+.form-group{margin-bottom:1.2rem}
+.form-label{font-size:12px;color:var(--muted);font-family:var(--mono);margin-bottom:6px;display:block;text-transform:uppercase;letter-spacing:0.5px}
+.form-input{
+  width:100%;
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:10px 14px;
+  color:var(--text);
+  font-family:var(--font);
+  font-size:14px;
+  outline:none;
+  transition:border-color 0.2s;
+}
+.form-input:focus{border-color:var(--accent)}
+.form-select{
+  width:100%;
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:10px 14px;
+  color:var(--text);
+  font-family:var(--font);
+  font-size:14px;
+  outline:none;
+  cursor:pointer;
+}
+.modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:1.5rem}
+.btn-cancel{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 20px;color:var(--muted);font-family:var(--font);font-size:14px;cursor:pointer}
+.btn-save{background:var(--accent);border:none;border-radius:8px;padding:10px 20px;color:#fff;font-family:var(--font);font-size:14px;font-weight:600;cursor:pointer}
+
+/* TOAST */
+.toast{
+  position:fixed;bottom:2rem;right:2rem;
+  background:var(--bg3);
+  border:1px solid var(--border2);
+  border-radius:10px;
+  padding:12px 20px;
+  font-size:14px;
+  display:flex;align-items:center;gap:8px;
+  opacity:0;transform:translateY(10px);
+  transition:all 0.3s;
+  pointer-events:none;
+  z-index:300;
+}
+.toast.show{opacity:1;transform:translateY(0)}
+.toast-icon{color:var(--green);font-size:16px}
+
+/* EMPTY STATE */
+.empty{text-align:center;padding:4rem 2rem;color:var(--muted)}
+.empty-icon{font-size:3rem;margin-bottom:1rem;opacity:0.3}
+.empty-text{font-size:1.1rem;font-weight:600;margin-bottom:0.5rem;color:var(--text)}
+
+/* NOTES CELL */
+.notes-input{
+  background:transparent;
+  border:none;
+  color:var(--muted);
+  font-family:var(--font);
+  font-size:13px;
+  width:100%;
+  outline:none;
+}
+.notes-input:focus{color:var(--text)}
+
+@media(max-width:768px){
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .page-title{font-size:1.4rem}
+  th:nth-child(4),td:nth-child(4),th:nth-child(5),td:nth-child(5){display:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><span class="logo-dot"></span> WebLeads CRM</div>
+  <div class="nav-stats">
+    <div class="nav-stat">Total: <span id="nav-total">0</span></div>
+    <div class="nav-stat">Enviadas: <span id="nav-sent">0</span></div>
+    <div class="nav-stat">Cerradas: <span id="nav-closed">0</span></div>
+  </div>
+</nav>
+
+<main>
+  <div class="page-header">
+    <h1 class="page-title">Mis <em>webs</em> de clientes</h1>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-label">Total creadas</div>
+      <div class="stat-value accent" id="stat-total">0</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Enviadas</div>
+      <div class="stat-value blue" id="stat-sent">0</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Interesados</div>
+      <div class="stat-value yellow" id="stat-interested">0</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Cerradas 💰</div>
+      <div class="stat-value green" id="stat-closed">0</div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="search" placeholder="Buscar cliente, sector, URL...">
+    </div>
+    <button class="filter-btn active" data-filter="all">Todas</button>
+    <button class="filter-btn" data-filter="creada">Creadas</button>
+    <button class="filter-btn" data-filter="enviada">Enviadas</button>
+    <button class="filter-btn" data-filter="interesado">Interesados</button>
+    <button class="filter-btn" data-filter="cerrado">Cerradas</button>
+    <button class="add-btn" onclick="openModal()">+ Añadir web</button>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Cliente</th>
+          <th>URL en Vercel</th>
+          <th>Estado</th>
+          <th>Email contacto</th>
+          <th>Fecha</th>
+          <th>Notas</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+    <div class="empty" id="empty-state" style="display:none">
+      <div class="empty-icon">🌐</div>
+      <div class="empty-text">Aún no hay webs aquí</div>
+      <div>Pulsa "Añadir web" para registrar la primera</div>
+    </div>
+  </div>
+</main>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <div class="modal-title" id="modal-title">Nueva web de cliente</div>
+    <div class="form-group">
+      <label class="form-label">Nombre del cliente *</label>
+      <input class="form-input" id="f-name" placeholder="Ej: GB Baterías, VR Interiorismo...">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Sector</label>
+      <input class="form-input" id="f-sector" placeholder="Ej: Electricidad, Madera, Salud...">
+    </div>
+    <div class="form-group">
+      <label class="form-label">URL en Vercel *</label>
+      <input class="form-input" id="f-url" placeholder="https://gb-baterias.vercel.app">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Email del contacto</label>
+      <input class="form-input" id="f-email" placeholder="contacto@empresa.com">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Estado</label>
+      <select class="form-select" id="f-status">
+        <option value="creada">Creada</option>
+        <option value="enviada">Enviada</option>
+        <option value="interesado">Interesado</option>
+        <option value="cerrado">Cerrada 💰</option>
+        <option value="descartado">Descartada</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Notas</label>
+      <input class="form-input" id="f-notes" placeholder="Llamar el lunes, precio acordado 800€...">
+    </div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeModal()">Cancelar</button>
+      <button class="btn-save" onclick="saveEntry()">Guardar</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"><span class="toast-icon">✓</span><span id="toast-msg">Copiado</span></div>
+
+<script>
+const STORAGE_KEY='webleads_v2';
+let data=[];
+let editId=null;
+let currentFilter='all';
+
+const STATUSES={
+  creada:{label:'Creada',cls:'badge-creada'},
+  enviada:{label:'Enviada',cls:'badge-enviada'},
+  interesado:{label:'Interesado',cls:'badge-interesado'},
+  cerrado:{label:'Cerrada 💰',cls:'badge-cerrado'},
+  descartado:{label:'Descartada',cls:'badge-descartado'}
+};
+
+function load(){
+  try{data=JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]')}catch{data=[]}
+  if(!data.length) addDefaults();
+  render();
+}
+
+function addDefaults(){
+  const defaults=[
+    {id:uid(),name:'GB Baterías',sector:'Automoción',url:'https://gbbaterias.vercel.app',email:'info@gbbaterias.es',status:'enviada',notes:'Llamar martes',date:'2026-05-08'},
+    {id:uid(),name:'VR Interiorismo',sector:'Interiorismo',url:'https://vrinteriorismo.vercel.app',email:'info@vrinteriorismo.com',status:'interesado',notes:'Muy interesado, pide precio',date:'2026-05-08'},
+    {id:uid(),name:'Maderas El Pino',sector:'Madera / Carpintería',url:'https://maderaselpino.vercel.app',email:'',status:'creada',notes:'',date:'2026-05-08'},
+    {id:uid(),name:'Repuestos IPC',sector:'Automoción',url:'https://repuestosipc.vercel.app',email:'',status:'enviada',notes:'Sin respuesta aún',date:'2026-05-08'},
+    {id:uid(),name:'Insmoelca',sector:'Instalaciones eléctricas',url:'https://insmoelca.vercel.app',email:'info@insmoelca.com',status:'cerrado',notes:'Vendido a 1.200€',date:'2026-05-08'},
+    {id:uid(),name:'Clinisalud Canarias',sector:'Salud / Clínica',url:'https://clinisalud.vercel.app',email:'',status:'creada',notes:'',date:'2026-05-09'},
+    {id:uid(),name:'Evalia Asesores',sector:'Asesoría fiscal',url:'https://evaliaasesores.vercel.app',email:'info@evaliaasesores.es',status:'enviada',notes:'Abierto el email',date:'2026-05-11'},
+  ];
+  data=defaults;
+  save();
+}
+
+function save(){localStorage.setItem(STORAGE_KEY,JSON.stringify(data))}
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
+
+function getFiltered(){
+  const q=document.getElementById('search').value.toLowerCase();
+  return data.filter(d=>{
+    const matchFilter=currentFilter==='all'||d.status===currentFilter;
+    const matchSearch=!q||d.name.toLowerCase().includes(q)||d.sector.toLowerCase().includes(q)||d.url.toLowerCase().includes(q)||d.email.toLowerCase().includes(q);
+    return matchFilter&&matchSearch;
+  });
+}
+
+function render(){
+  const filtered=getFiltered();
+  const tbody=document.getElementById('table-body');
+  const empty=document.getElementById('empty-state');
+
+  updateStats();
+
+  if(!filtered.length){
+    tbody.innerHTML='';
+    empty.style.display='block';
+    return;
+  }
+  empty.style.display='none';
+
+  tbody.innerHTML=filtered.map(d=>{
+    const st=STATUSES[d.status]||STATUSES.creada;
+    const shortUrl=d.url.replace('https://','').replace('http://','');
+    return`<tr>
+      <td>
+        <div class="client-name">${esc(d.name)}</div>
+        <div class="client-sector">${esc(d.sector)}</div>
+      </td>
+      <td class="url-cell">
+        ${d.url?`<a href="${esc(d.url)}" target="_blank">${esc(shortUrl)}</a>`:'<span style="color:var(--muted)">—</span>'}
+      </td>
+      <td>
+        <span class="badge ${st.cls}">${st.label}</span>
+      </td>
+      <td style="font-size:13px;color:var(--muted)">${esc(d.email)||'—'}</td>
+      <td style="font-size:12px;color:var(--muted);font-family:var(--mono)">${d.date||'—'}</td>
+      <td>
+        <input class="notes-input" value="${esc(d.notes)}" placeholder="Añadir nota..." 
+          onchange="updateNote('${d.id}',this.value)">
+      </td>
+      <td>
+        <div class="actions">
+          ${d.url?`<button class="btn-icon copy" title="Copiar URL" onclick="copyUrl('${esc(d.url)}')">📋</button>`:''}
+          ${d.email?`<button class="btn-icon email" title="Abrir email" onclick="openEmail('${esc(d.email)}','${esc(d.name)}','${esc(d.url)}')">✉️</button>`:''}
+          ${d.url?`<a class="btn-icon view" href="${esc(d.url)}" target="_blank" title="Ver web">🔗</a>`:''}
+          <button class="btn-icon" title="Cambiar estado" onclick="cycleStatus('${d.id}')">🔄</button>
+          <button class="btn-icon" title="Editar" onclick="editEntry('${d.id}')">✏️</button>
+          <button class="btn-icon" title="Eliminar" onclick="deleteEntry('${d.id}')" style="color:var(--red)">🗑</button>
+        </div>
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+function updateStats(){
+  document.getElementById('stat-total').textContent=data.length;
+  document.getElementById('stat-sent').textContent=data.filter(d=>d.status==='enviada').length;
+  document.getElementById('stat-interested').textContent=data.filter(d=>d.status==='interesado').length;
+  document.getElementById('stat-closed').textContent=data.filter(d=>d.status==='cerrado').length;
+  document.getElementById('nav-total').textContent=data.length;
+  document.getElementById('nav-sent').textContent=data.filter(d=>d.status==='enviada').length;
+  document.getElementById('nav-closed').textContent=data.filter(d=>d.status==='cerrado').length;
+}
+
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+
+function copyUrl(url){
+  navigator.clipboard.writeText(url).then(()=>toast('URL copiada al portapapeles ✓'));
+}
+
+function openEmail(email,name,url){
+  const subject=encodeURIComponent(`He creado una web para ${name}`);
+  const body=encodeURIComponent(`Hola,\n\nTe comparto la web que he preparado para ${name}:\n\n${url}\n\nQuedo a tu disposición para cualquier consulta.\n\nUn saludo`);
+  window.open(`mailto:${email}?subject=${subject}&body=${body}`);
+}
+
+function cycleStatus(id){
+  const order=['creada','enviada','interesado','cerrado','descartado'];
+  const d=data.find(x=>x.id===id);
+  if(!d)return;
+  const idx=order.indexOf(d.status);
+  d.status=order[(idx+1)%order.length];
+  save();render();
+  toast(`Estado → ${STATUSES[d.status].label}`);
+}
+
+function updateNote(id,val){
+  const d=data.find(x=>x.id===id);
+  if(d){d.notes=val;save();}
+}
+
+function deleteEntry(id){
+  if(!confirm('¿Eliminar esta web del panel?'))return;
+  data=data.filter(x=>x.id!==id);
+  save();render();
+  toast('Entrada eliminada');
+}
+
+function editEntry(id){
+  const d=data.find(x=>x.id===id);
+  if(!d)return;
+  editId=id;
+  document.getElementById('modal-title').textContent='Editar cliente';
+  document.getElementById('f-name').value=d.name;
+  document.getElementById('f-sector').value=d.sector;
+  document.getElementById('f-url').value=d.url;
+  document.getElementById('f-email').value=d.email;
+  document.getElementById('f-status').value=d.status;
+  document.getElementById('f-notes').value=d.notes;
+  document.getElementById('modal').classList.add('open');
+}
+
+function openModal(){
+  editId=null;
+  document.getElementById('modal-title').textContent='Nueva web de cliente';
+  ['f-name','f-sector','f-url','f-email','f-notes'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('f-status').value='creada';
+  document.getElementById('modal').classList.add('open');
+}
+
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+
+function saveEntry(){
+  const name=document.getElementById('f-name').value.trim();
+  const url=document.getElementById('f-url').value.trim();
+  if(!name){alert('El nombre del cliente es obligatorio');return;}
+  const entry={
+    id:editId||uid(),
+    name,
+    sector:document.getElementById('f-sector').value.trim(),
+    url,
+    email:document.getElementById('f-email').value.trim(),
+    status:document.getElementById('f-status').value,
+    notes:document.getElementById('f-notes').value.trim(),
+    date:new Date().toISOString().slice(0,10)
+  };
+  if(editId){
+    const idx=data.findIndex(x=>x.id===editId);
+    if(idx>-1)data[idx]=entry;
+  }else{
+    data.unshift(entry);
+  }
+  save();render();closeModal();
+  toast(editId?'Cliente actualizado':'Nueva web añadida ✓');
+}
+
+function toast(msg){
+  const el=document.getElementById('toast');
+  document.getElementById('toast-msg').textContent=msg;
+  el.classList.add('show');
+  setTimeout(()=>el.classList.remove('show'),2500);
+}
+
+document.getElementById('search').addEventListener('input',render);
+
+document.querySelectorAll('.filter-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    currentFilter=btn.dataset.filter;
+    render();
+  });
+});
+
+document.getElementById('modal').addEventListener('click',e=>{
+  if(e.target===document.getElementById('modal'))closeModal();
+});
+
+load();
+</script>
+</body>
+</html>
